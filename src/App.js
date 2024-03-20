@@ -6,6 +6,7 @@ import { motion, useScroll } from "framer-motion";
 import Navbar from './components/NavBar/NavBar';
 import Skills from './components/Skills/Skills';
 import Experience from './components/Experience/Experience';
+import Education from './components/Education/Education';
 import Home from './components/Home/Home';
 
 const Body = styled.div`
@@ -32,7 +33,7 @@ function App() {
             <Wrapper>
               <Skills />
               <Experience />
-              {/* <Education />             */}
+              <Education />            
             </Wrapper>
           </Body>
         </Router>

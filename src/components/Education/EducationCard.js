@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from "styled-components";
 
 const Document = styled.img`
     display: none;
@@ -13,11 +13,21 @@ const Document = styled.img`
     }
 `
 
+const Description = styled.div`
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    color: ${({ theme }) => theme.text_primary + 99};
+    margin-bottom: 10px;
+    @media only screen and (max-width: 768px){
+        font-size: 12px;
+    }
+`
+
 const Span = styled.span`
 overflow: hidden;
 display: -webkit-box;
 max-width: 100%;
-
 -webkit-line-clamp: 4;
 -webkit-box-orient: vertical;
 text-overflow: ellipsis;
@@ -45,9 +55,9 @@ const Card = styled.div`
         width: 300px;
     }
 
-    &:hover ${Document}{
+    /* &:hover ${Document}{
         display: flex;
-    }
+    } */
 
     &:hover ${Span}{
         overflow: visible;
@@ -58,99 +68,80 @@ const Card = styled.div`
 `
 
 const Top = styled.div`
-    display: flex;
-    gap: 12px;
     width: 100%;
-`;
+    display: flex;
+    gap: 12px
+`
 
-const Logo = styled.img`
+const Image = styled.img`
     height: 50px;
-    background-color: #000;
+    background-color: #fff;
     border-radius: 10px;
     margin-top: 4px;
-
-    @media screen and (max-width: 768px) {
+    @media only screen and (max-width: 768px){
         height: 40px;
     }
-`;
+`
 
 const Body = styled.div`
-    display:flex;
-    flex-direction: column;
     width: 100%;
-`;
+    display: flex;
+    flex-direction: column; 
+`
 
-const Role = styled.div`
+const Name = styled.div`
     font-size: 18px;
     font-weight: 600;
-    color: ${({ theme }) => theme.text_primary+99};
-
-    @media screen and (max-width: 768px) {
-        font-size: 16px;
-    }
-`;
-
-const Company = styled.div`
-    font-size: 16px;
-    font-weight: 500px;
-    color: ${({ theme }) => theme.text_secondary+99};
-
-    @media screen and (max-width: 768px) {
-        font-size: 12px;
-    }
-`;
-
-const Duration = styled.div`
-    font-size: 12px;
-    font-weight: 400px;
-    color: ${({ theme }) => theme.text_secondary+80};
-
-    @media screen and (max-width: 768px) {
-        font-size: 10px;
-    }
-`;
-
-const Description = styled.div`
-    width: 100%;
-    font-size: 15px;
-    font-weight: 400;
     color: ${({ theme }) => theme.text_primary + 99};
-    margin-bottom: 10px;
+    @media only screen and (max-width: 768px){
+        font-size: 14px;
+    }
+`
+
+const Degree = styled.div`
+    font-size: 14px;
+    font-weight: 500;
+    color: ${({ theme }) => theme.text_secondary + 99};
     @media only screen and (max-width: 768px){
         font-size: 12px;
     }
 `
-// const Description = styled.div`
-//     width: 100%;
-//     display: flex;
-//     flex-direction: column;
-//     font-size: 14px;
-//     font-weight: 400px;
-//     color: ${({ theme }) => theme.text_primary+99};
 
-//     @media screen and (max-width: 768px) {
-//         font-size: 12px;
-//     };
-// `;
+const Date = styled.div`
+    font-size: 12px;
+    font-weight: 400;
+    color: ${({ theme }) => theme.text_secondary + 80};
+    @media only screen and (max-width: 768px){
+        font-size: 10px;
+    }
+`
 
-const ExperienceCard = ({ experience }) => {
+const Grade = styled.div`
+    font-size: 14px;
+    font-weight: 500;
+    color: ${({ theme }) => theme.text_secondary + 99};
+    @media only screen and (max-width: 768px){
+        font-size: 12px;
+    }
+`;
+
+const EducationCard = ({education}) => {
   return (
     <Card>
         <Top>
-            <Logo src={experience.img} />
+            <Image src={education.img} />
             <Body>
-                <Role>{experience.role}</Role>
-                <Company>{experience.company}</Company>
-                <Duration>{experience.date}</Duration>
+                <Name>{education.school}</Name>
+                <Degree>{education.degree}</Degree>
+                <Date>{education.date}</Date>
             </Body>
         </Top>
+        <Grade><b>Grade: </b>{education.grade}</Grade>
         <Description>
-            <Span>{experience.desc}</Span> <br/>
-            <Span><b>Technologies:</b> {experience.skills}</Span>
+            <Span><b>Relevant Coursework: </b>{education.desc}</Span>
         </Description>
-
     </Card>
   )
 }
 
-export default ExperienceCard
+export default EducationCard
