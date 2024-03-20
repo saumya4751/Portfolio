@@ -5,6 +5,7 @@ import { darkTheme, lightTheme } from './utils/Themes';
 import { motion, useScroll } from "framer-motion";
 import Navbar from './components/NavBar/NavBar';
 import Skills from './components/Skills/Skills';
+import Experience from './components/Experience/Experience';
 import Home from './components/Home/Home';
 
 const Body = styled.div`
@@ -30,8 +31,8 @@ function App() {
             <Home />
             <Wrapper>
               <Skills />
-              {/* <Experience />
-              <Education />             */}
+              <Experience />
+              {/* <Education />             */}
             </Wrapper>
           </Body>
         </Router>
