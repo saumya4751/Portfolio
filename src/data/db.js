@@ -11,7 +11,4 @@ export const Bio = {
     resume:
       "https://drive.google.com/file/d/1Bt6pZ9E2s_b0Ec_HHS-1Cgdk2FRst2BB/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/saumya4751/",
-    twitter: "https://twitter.com/RishavChanda",
-    insta: "https://www.instagram.com/rishav_chanda/",
-    facebook: "https://www.facebook.com/rishav.chanda.165/",
   };
