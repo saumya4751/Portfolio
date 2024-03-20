@@ -175,3 +175,44 @@ export const Bio = {
       ],
     },
 ];
+
+export const experiences = [
+  {
+    id: 0,
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAMYaPt063CvF3zH9MaS1rbEoNoYOBAoygyw&usqp=CAU",
+    role: "Full Stack Engineer",
+    company: "Akash Technolabs",
+    date: "Sept 2020 - July 2022",
+    desc: "Working on Flipr Platforms, managing DevOps, and streamlining the process with automation.",
+    skills: [
+      "Docker",
+      "Terraform",
+      "AWS",
+      "EC2",
+      "Portainer",
+      "Nginx",
+      "JavaScript",
+      "TypeScript",
+      "Node Js",
+      " Next Js",
+    ],
+  },
+  {
+    id: 1,
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAMYaPt063CvF3zH9MaS1rbEoNoYOBAoygyw&usqp=CAU",
+    role: "Software Engineer Intern",
+    company: "Akash Technolabs",
+    date: "July 2019 - May 2020",
+    desc: "Working on the frontend of the web application using ReactJS, Redux, and Material UI.",
+    skills: [
+      "ReactJS",
+      "Redux",
+      "NodeJs",
+      "Material UI",
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
+    doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
+  }
+];
