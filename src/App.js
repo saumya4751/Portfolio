@@ -3,6 +3,7 @@ import styled, { ThemeProvider } from "styled-components";
 import {  BrowserRouter as Router } from 'react-router-dom';
 import { darkTheme, lightTheme } from './utils/Themes';
 import Navbar from './components/NavBar/NavBar';
+import Home from './components/Home/Home';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -24,8 +25,8 @@ function App() {
         <Router>
           <Navbar />
           <Body>
-            {/* <About />
-            <Skills />
+            <Home />
+            {/* <Skills />
             <Experience />
             <Education />             */}
           </Body>
