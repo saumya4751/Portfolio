@@ -4,14 +4,21 @@ import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
 import { Bio } from '../../data/db';
 import { Nav, NavContainer, NavLogo, NavItems, NavLink, ButtonContainer, GitHubButton, MobileIcon, MobileMenu, MobileMenuLinks, Span } from './NavBarStyledComponents';
+import {motion, useScroll} from "framer-motion";
+import '../../App.css'
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
     const theme = useTheme();
     const githubLink = Bio.github;
+    const { scrollYProgress } = useScroll();
 
     return (
         <Nav>
+            <motion.div
+            className="progress-bar"
+            style={{ scaleX: scrollYProgress }}
+        />
             <NavContainer>
                 <NavLogo to="/">
                     <a
