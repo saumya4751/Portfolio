@@ -8,6 +8,8 @@ import Skills from './components/Skills/Skills';
 import Experience from './components/Experience/Experience';
 import Education from './components/Education/Education';
 import Home from './components/Home/Home';
+import Projects from './components/Projects/Projects';
+import { useState } from 'react';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -23,17 +25,19 @@ const Wrapper = styled.div`
 `;
 
 function App() {
+  const [openModal, setOpenModal] = useState({ state: false, project: null });
   return (
     <div className="App">
       <ThemeProvider theme={lightTheme} >
         <Router>
-          <Navbar />
+          <Navbar /> 
           <Body>
             <Home />
             <Wrapper>
               <Skills />
               <Experience />
-              <Education />            
+              <Education />  
+              <Projects openModal={openModal} setOpenModal={setOpenModal} />          
             </Wrapper>
           </Body>
         </Router>
