@@ -6,7 +6,7 @@ export const HomeContainer = styled.div`
     justify-content: center;
     position: relative;
     padding: 75px 30px;
-    // padding: 80px 30px;
+    /* padding: 80px 30px; */
     @media (max-width: 960px) {
     padding: 66px 16px;
     }
