@@ -15,10 +15,7 @@ const Navbar = () => {
 
     return (
         <Nav>
-            <motion.div
-            className="progress-bar"
-            style={{ scaleX: scrollYProgress }}
-        />
+            
             <NavContainer>
                 <NavLogo to="/">
                     <a
@@ -110,6 +107,10 @@ const Navbar = () => {
                     ) 
                 }
             </NavContainer>
+            <motion.div
+                className="progress-bar"
+                style={{ scaleX: scrollYProgress }}
+            />
         </Nav>
     )
 }
