@@ -57,5 +57,6 @@ export const TimelineSection = styled.div`
     gap: 12px;
     @media (max-width: 768px) {
         align-items: start;
+        margin-left: 0px;
     }
 `;

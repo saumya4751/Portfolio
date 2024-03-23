@@ -15,7 +15,7 @@ const Experience = () => {
   const width = window.innerWidth;
 
   return (
-    <Container id='experience'>
+    <Container id='experience' style={{ marginTop: '70px'}}>
         <Wrapper>
             <Title>
                 Experience
@@ -29,7 +29,7 @@ const Experience = () => {
                         {experiences.map((experience, idx) => (
                             <TimelineItem>
                                 <TimelineSeparator>
-                                    <TimelineDot variant='outlined' color='secondary'><LaptopTwoToneIcon/></TimelineDot>
+                                    <TimelineDot variant='outlined' color='secondary'><LaptopTwoToneIcon fontSize='small' /></TimelineDot>
                                     {idx !== experiences.length - 1 && (
                                         <TimelineConnector sx={{ 
                                             background: '#854CE6',

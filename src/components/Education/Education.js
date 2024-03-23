@@ -9,12 +9,13 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import { educations } from '../../data/db';
 import EducationCard from './EducationCard';
+import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 
 const Education = () => {
   const width = window.innerWidth;
 
   return (
-    <Container id="education" style={{ marginTop: '200px'}}>
+    <Container id="education" style={{ marginTop: '220px'}}>
         <Wrapper>
             <Title>Education</Title>
             <Desc>
@@ -26,7 +27,7 @@ const Education = () => {
                         {educations.map((education, idx) => (
                             <TimelineItem>
                                 <TimelineSeparator>
-                                    <TimelineDot variant='outlined' color='secondary' />
+                                    <TimelineDot variant='outlined' color='secondary'><SchoolOutlinedIcon fontSize='small' /></TimelineDot>
                                     {idx !== educations.length - 1 && (
                                         <TimelineConnector sx={{ 
                                             background: '#854CE6',

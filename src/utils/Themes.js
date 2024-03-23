@@ -15,9 +15,9 @@
 // export const lightTheme = {
 //     bg:"#FFFFFF",
 //     bgLight: "#f0f0f0",
-//     primary:"#0077e6",
-//     text_primary:"#1a8cff",
-//     text_secondary:"#1a8cff",
+//     primary:"#000",
+//     text_primary:"#000",
+//     text_secondary:"#000",
 //     card:"#f2f2f2",
 //     card_light: '#cce6ff',
 //     button:"#5c5b5b",
