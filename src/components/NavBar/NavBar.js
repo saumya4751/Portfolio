@@ -3,7 +3,7 @@ import { useTheme } from 'styled-components';
 import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
 import { Bio } from '../../data/db';
-import { Nav, NavContainer, NavLogo, NavItems, NavLink, ButtonContainer, GitHubButton, MobileIcon, MobileMenu, MobileMenuLinks, Span } from './NavBarStyledComponents';
+import { Nav, NavContainer, NavLogo, NavItems, NavLink, ButtonContainer, GitHubButton, MobileIcon, MobileMenu, MobileMenuLinks, Span } from '../StyledComponents/NavBarStyledComponents';
 import {motion, useScroll} from "framer-motion";
 import '../../App.css'
 

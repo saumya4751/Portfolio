@@ -2,10 +2,9 @@ import {Link as LinkR} from "react-router-dom";
 import styled from 'styled-components';
 
 export const Nav = styled.div`
-    /* background-color: ${({theme}) => theme.card_light}; */
-    background-color: white;
+    background-color: ${({theme}) => theme.card_light};
     height: 70px;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,20 +41,6 @@ export const NavLogo = styled(LinkR)`
     }
 `;
 
-export const MobileIcon = styled.div`
-    display: none;
-    @media screen and (max-width: 768px) {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-100%, 60%);
-        font-size: 1.5rem;
-        cursor: pointer;
-        color: ${({ theme }) => theme.text_primary};
-    }
-`;
-
 export const NavItems = styled.ul`
     width: 100%;
     display: flex;
@@ -63,7 +48,7 @@ export const NavItems = styled.ul`
     justify-content:center;
     gap: 32px;
     padding: 0 10px;
-    list-style: none;
+    list-style: none;    
 
     .active {
         border-bottom: 2px solid ${({ theme }) => theme.primary};
@@ -126,6 +111,20 @@ export const Span = styled.div`
     padding: 0 4px;
     font-weight: bold;
     font-size: 18px;
+`;
+
+export const MobileIcon = styled.div`
+    display: none;
+    @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: ${({ theme }) => theme.text_primary};
+    }
 `;
 
 export const MobileMenu = styled.div`
