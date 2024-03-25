@@ -39,6 +39,7 @@ export const Divider = styled.div`
 
 export const ProjectCardContainer = styled.div`
   display: flex;
+  max-width: 1200px;
   justify-content: center;
   align-items: center;
   gap: 30px;

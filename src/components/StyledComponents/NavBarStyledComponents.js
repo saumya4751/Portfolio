@@ -26,12 +26,12 @@ export const NavContainer = styled.div`
     z-index: 1;
     width: 100%;
     padding: 0px 0px;
-    max-width: 1300px;
+    max-width: 1200px;
 `;
 
 export const NavLogo = styled(LinkR)`
     width: 80%;    
-    padding: 0 6px;
+    padding: 0 0px;
     display: flex;
     justify-content: start;
     align-items: center;

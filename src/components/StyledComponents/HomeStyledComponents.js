@@ -44,11 +44,8 @@ export const HomeInnerContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1200px;
   
-  @media screen and (max-width: 1200px) {
-    max-width: 1100px;
-  }
   @media screen and (max-width: 960px) {
     flex-direction: column;
   }
@@ -115,9 +112,10 @@ export const Span = styled.span`
 
 export const Description = styled.div`
   font-size: 20px;
-  line-height: 32px;
+  line-height: 30px;
+  max-width: 850px;
   margin-bottom: 42px;
-  text-align: justify;
+  text-align: left;
   color: ${({ theme }) => theme.text_primary + 95};
 
   @media (max-width: 960px) {

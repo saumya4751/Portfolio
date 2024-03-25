@@ -37,19 +37,21 @@ export const Title = styled.div`
 
 export const Desc = styled.div`
     font-size: 18px;
-    text-align: left;
+    text-align: center;
     max-width: 600px;
     color: ${({ theme }) => theme.text_secondary+99};
     @media (max-width: 768px) {
-        font-size: 16px;
+        font-size: 14px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 `;
 
 export const TimelineSection = styled.div`
     width: 100%;
-    max-width: 1300px;
+    max-width: 1200px;
     margin-top: 10px;
-    margin-left: -30px;
+    margin-left: 85px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -59,11 +61,11 @@ export const TimelineSection = styled.div`
     gap: 12px;
     @media (max-width: 1272px) {
         align-items: end;
-        margin-left: -100px;
+        margin-left: -170px;
     }
     @media (max-width: 1140px) {
         align-items: flex-end;
-        margin-left: -20px;
+        margin-left: -110px;
     }
     @media (max-width: 1048px) {
         align-items: end;
@@ -71,10 +73,10 @@ export const TimelineSection = styled.div`
     }
     @media (max-width: 940px) {
         align-items: start;
-        margin-left: -10px;
+        margin-left: -30px;
     }
     @media (max-width: 768px) {
         align-items: start;
-        margin-left: -75px;
+        margin-left: -50px;
     }
 `;

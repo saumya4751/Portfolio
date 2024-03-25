@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const SkillsContainer = styled.div`
   width: 100%;
+  max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
@@ -11,7 +12,7 @@ export const SkillsContainer = styled.div`
 
 export const Skill = styled.div`
   width: 60%;
-  max-width: 600px;
+  max-width: 585px;
   background: ${({ theme }) => theme.card+99};
   border: 0.1px solid ${({ theme }) => theme.card_border};
   box-shadow: rgba(23, 92, 230, 0.15) 0px 0px 10px;
