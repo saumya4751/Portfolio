@@ -47,6 +47,6 @@ body{
   right: 0;
   height: 3px;
   background: var(--red);
-  background-color: blueviolet;
+  background-color: #0000cc;
   transform-origin: 0%;
 }

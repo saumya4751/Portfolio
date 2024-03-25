@@ -12,21 +12,21 @@ export const SkillsContainer = styled.div`
 export const Skill = styled.div`
   width: 60%;
   max-width: 600px;
-  background: ${({ theme }) => theme.card};
-  border: 0.1px solid #854CE6;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  background: ${({ theme }) => theme.card+99};
+  border: 0.1px solid ${({ theme }) => theme.card_border};
+  box-shadow: rgba(23, 92, 230, 0.15) 0px 0px 10px;
   border-radius: 16px;
   padding: 18px 36px;
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.2);
     transform: translateY(-5px);
-    /* background-color: white; */
+    background-color: #f3f2f2;
   }
   
   @media (max-width: 768px) {
-    max-width: 400px;
+    max-width: 450px;
     padding: 10px 36px;
   }
   @media (max-width: 500px) {
@@ -54,8 +54,8 @@ export const SkillList = styled.div`
 export const SkillItem = styled.div`
   font-size: 16px;
   font-weight: 400;
-  color: ${({ theme }) => theme.text_primary + 80};
-  border: 1px solid ${({ theme }) => theme.text_primary + 80};
+  color: ${({ theme }) => theme.text_primary};
+  border: 1px solid ${({ theme }) => theme.text_primary + 50};
   border-radius: 12px;
   padding: 12px 16px;
   display: flex;

@@ -2,9 +2,10 @@ import {Link as LinkR} from "react-router-dom";
 import styled from 'styled-components';
 
 export const Nav = styled.div`
-    background-color: ${({theme}) => theme.card_light};
+    /* background-color: ${({theme}) => theme.card_light}; */
+    background:linear-gradient(38.73deg, #e0e0eb 0%, #f0f0f5 50%), linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%);
     height: 70px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #b3b3ff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,8 +65,13 @@ export const NavLink = styled.a`
     
     font-weight: 500;
     cursor: pointer;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.1s ease-in-out;
     text-decoration: none;
+
+    &:hover {
+        color: ${({ theme }) => theme.primary};
+        transform: scale(0.95) translateZ(-5px);
+    }
 
     :active {
     border-bottom: 2px solid ${({ theme }) => theme.primary};
@@ -97,10 +103,11 @@ export const GitHubButton = styled.button`
     font-weight: 500;
     text-decoration: none;
     font-size: 16px;
-    transition: all 0.6s ease-in-out;
-    :hover {     
-        background: ${({ theme }) => theme.primary};
-        color: ${({ theme }) => theme.white};     
+    transition: all 0.3s ease-in-out;
+    &:hover {     
+        background: ${({ theme }) => theme.primary+99};
+        color: ${({ theme }) => theme.white};  
+        transform: scale(0.95) translateZ(-5px);   
     }
     @media screen and (max-width: 768px) { 
         font-size: 14px;

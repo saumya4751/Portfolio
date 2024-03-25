@@ -2,10 +2,7 @@ import React from 'react'
 import { Bio } from '../../data/db';
 import Typewriter from 'typewriter-effect';
 import { HomeBg, HomeContainer, HomeInnerContainer, HomeLeft, HomeRight, Description, Image, ResumeButton, Span, TextLoop, Title } from '../StyledComponents/HomeStyledComponents';
-import image1 from "../../images/image1.png";
-import design from "../../images/design.png"
-
-import Subject from "../../images/Subject.png"
+import image from "../../images/image.jpg";
 import styled from 'styled-components';
 
 const DotPattern = styled.svg`
@@ -22,7 +19,6 @@ const Home = () => {
       
         <HomeContainer>
           <HomeBg>
-
           </HomeBg>
           <HomeInnerContainer>
             <HomeLeft>
@@ -46,7 +42,7 @@ const Home = () => {
               <ResumeButton href={Bio.resume} target="_blank">Check Resume</ResumeButton>
             </HomeLeft>
             <HomeRight>
-              <Image src={image1} alt="Hero" />
+              <Image src={image} alt="Hero" />
             </HomeRight>
           </HomeInnerContainer>
         </HomeContainer>

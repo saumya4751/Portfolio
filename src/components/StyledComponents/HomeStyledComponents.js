@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HomeContainer = styled.div`
-    /* background: ${({ theme }) => theme.card_light}; */
+    background: ${({ theme }) => theme.card_light+99};
     display: flex;
     justify-content: center;
     position: relative;
@@ -14,7 +14,7 @@ export const HomeContainer = styled.div`
     }
     z-index: 1;
 
-    /* clip-path: polygon(0 0, 100% 0%, 100% 100%, 70% 97%, 0 100%); */
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 70% 97%, 0 100%);
 `;
 
 export const HomeBg = styled.div`
@@ -77,7 +77,7 @@ export const HomeLeft = styled.div`
 export const Title = styled.div`
   font-size: 50px;
   font-weight: 700;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.text_title};
   line-height: 68px;
 
   @media screen and (max-width: 960px) {
@@ -159,15 +159,15 @@ export const Image = styled.img`
   padding-bottom: 50px 50px;
   /* box-shadow: 1px; */
   border-radius: 50%; 
-  border: 1px solid ${({ theme }) => theme.primary};
+  border: 0.5px solid ${({ theme }) => theme.primary};
 
   @media screen and (max-width: 768px) {
+    display: none;
     border-radius: 50%;
-    height: 100%;
-    max-width: 350px;
+    max-width: 250px;
   }
 
-  @media (max-width: 640px) {
+  @media screen and (max-width: 640px) {
     max-width: 250px;
     max-height: 300px;
   }
@@ -191,10 +191,12 @@ export const ResumeButton = styled.a`
     font-weight: 700;
     text-decoration: none;
     font-size: 16px;
-    transition: all 0.6s ease-in-out !important;
-    :hover {
-        background: ${({ theme }) => theme.primary};
+    transition: all 0.3s ease-in-out !important;
+
+    &:hover {
+        background-color: ${({ theme }) => theme.primary+99};
         color: ${({ theme }) => theme.white};     
+        transform: scale(0.99) translateZ(-5px); 
     }
     @media screen and (max-width: 768px) { 
     font-size: 14px;

@@ -15,7 +15,8 @@ const Experience = () => {
   const width = window.innerWidth;
 
   return (
-    <Container id='experience' style={{ marginTop: '70px'}}>
+    <Container id='experience'> 
+    {/* // marginTop: '70px' */}
         <Wrapper>
             <Title>
                 Experience
@@ -25,15 +26,14 @@ const Experience = () => {
             </Desc>
             { (width > 768) ? (
                 <TimelineSection>
-                    <Timeline style={{ display: 'flex', justifyContent: 'center'}}>                    
+                    <Timeline style={{ display: 'flex', justifyContent: 'left'}}>                    
                         {experiences.map((experience, idx) => (
                             <TimelineItem>
                                 <TimelineSeparator>
-                                    <TimelineDot variant='outlined' color='secondary'><LaptopTwoToneIcon fontSize='small' /></TimelineDot>
+                                    <TimelineDot variant='outlined' color='primary'><LaptopTwoToneIcon fontSize='small' /></TimelineDot>
                                     {idx !== experiences.length - 1 && (
                                         <TimelineConnector sx={{ 
-                                            background: '#854CE6',
-                                            height: "210px",
+                                            background: `#000099`,
                                         }}  />
                                     )}
                                 </TimelineSeparator>
@@ -46,9 +46,9 @@ const Experience = () => {
                 </TimelineSection>
             ) : (
                 <TimelineSection>
-                    <Timeline style={{ display: 'flex', justifyContent: 'center'}}>                    
+                    <Timeline style={{ display: 'flex', justifyContent: 'left'}}>                    
                         {experiences.map((experience, idx) => (
-                            <TimelineItem position='right'>
+                            <TimelineItem>
                                 <TimelineSeparator>
                                     <TimelineDot variant='outlined' color='secondary' />
                                     {idx !== experiences.length - 1 && (

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Desc, Title, Wrapper } from '../Skills/SkillsStyledComponents';
+import { Container, Desc, Title, Wrapper } from '../StyledComponents/StyledComponents';
 import { TimelineSection } from '../StyledComponents/StyledComponents'
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
@@ -15,7 +15,7 @@ const Education = () => {
   const width = window.innerWidth;
 
   return (
-    <Container id="education" style={{ marginTop: '220px'}}>
+    <Container id="education">
         <Wrapper>
             <Title>Education</Title>
             <Desc>
@@ -27,11 +27,10 @@ const Education = () => {
                         {educations.map((education, idx) => (
                             <TimelineItem>
                                 <TimelineSeparator>
-                                    <TimelineDot variant='outlined' color='secondary'><SchoolOutlinedIcon fontSize='small' /></TimelineDot>
+                                    <TimelineDot variant='outlined' color='primary'><SchoolOutlinedIcon fontSize='small' /></TimelineDot>
                                     {idx !== educations.length - 1 && (
                                         <TimelineConnector sx={{ 
-                                            background: '#854CE6',
-                                            height: "190px"
+                                            background: '#000099',
                                         }}  />
                                     )}
                                 </TimelineSeparator>

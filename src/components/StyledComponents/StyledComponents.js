@@ -28,7 +28,7 @@ export const Title = styled.div`
     text-align: left;
     font-weight: 600;
     margin-top: 75px;
-    color: ${({ theme }) => theme.text_primary};
+    color: ${({ theme }) => theme.text_title};
     @media (max-width: 768px) {
         margin-top: 80px;
         font-size: 32px;
@@ -39,7 +39,7 @@ export const Desc = styled.div`
     font-size: 18px;
     text-align: left;
     max-width: 600px;
-    color: ${({ theme }) => theme.text_secondary};
+    color: ${({ theme }) => theme.text_secondary+99};
     @media (max-width: 768px) {
         font-size: 16px;
     }
@@ -49,14 +49,32 @@ export const TimelineSection = styled.div`
     width: 100%;
     max-width: 1300px;
     margin-top: 10px;
+    margin-left: -30px;
+    position: relative;
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-items: center;
-    justify-content: center;
+    align-items: end;
+    justify-content: end;
     gap: 12px;
+    @media (max-width: 1272px) {
+        align-items: end;
+        margin-left: -100px;
+    }
+    @media (max-width: 1140px) {
+        align-items: flex-end;
+        margin-left: -20px;
+    }
+    @media (max-width: 1048px) {
+        align-items: end;
+        margin-left: -230px;
+    }
+    @media (max-width: 940px) {
+        align-items: start;
+        margin-left: -10px;
+    }
     @media (max-width: 768px) {
         align-items: start;
-        margin-left: 0px;
+        margin-left: -75px;
     }
 `;
