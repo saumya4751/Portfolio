@@ -1,5 +1,6 @@
 import React from 'react'
-import { Container, Desc, Skill, SkillImage, SkillItem, SkillList, SkillTitle, SkillsContainer, Title, Wrapper } from './SkillsStyledComponents'
+import { Container, Desc, Title, Wrapper } from "../StyledComponents/StyledComponents"
+import { Skill, SkillImage, SkillItem, SkillList, SkillTitle, SkillsContainer } from '../StyledComponents/SkillsStyledComponents'
 import { skills } from '../../data/db';
 
 const Skills = () => {

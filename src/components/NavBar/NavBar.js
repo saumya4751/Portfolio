@@ -3,7 +3,7 @@ import { useTheme } from 'styled-components';
 import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
 import { Bio } from '../../data/db';
-import { Nav, NavContainer, NavLogo, NavItems, NavLink, ButtonContainer, GitHubButton, MobileIcon, MobileMenu, MobileMenuLinks, Span } from './NavBarStyledComponents';
+import { Nav, NavContainer, NavLogo, NavItems, NavLink, ButtonContainer, GitHubButton, MobileIcon, MobileMenu, MobileMenuLinks, Span } from '../StyledComponents/NavBarStyledComponents';
 import {motion, useScroll} from "framer-motion";
 import '../../App.css'
 
@@ -15,14 +15,13 @@ const Navbar = () => {
 
     return (
         <Nav>
-            
             <NavContainer>
                 <NavLogo to="/">
                     <a
                         style={{
                             display: "flex",
                             alignItems: "center",
-                            color: "purple", 
+                            color: "#000080", 
                             marginBottom: "20px",
                             cursor: "pointer",
                         }}
@@ -41,8 +40,8 @@ const Navbar = () => {
                     <NavLink href='#home'>Home</NavLink>
                     <NavLink href='#skills'>Skills</NavLink>
                     <NavLink href='#experience'>Experience</NavLink>
-                    <NavLink href='#projects'>Projects</NavLink>
                     <NavLink href='#education'>Education</NavLink>
+                    <NavLink href='#projects'>Projects</NavLink>
                 </NavItems>
                 <ButtonContainer>
                     <GitHubButton 
@@ -77,20 +76,20 @@ const Navbar = () => {
                                 Experience
                             </MobileMenuLinks>
                             <MobileMenuLinks
-                                href="#projects"
-                                onClick={() => {
-                                    setOpen(!open)
-                                }}
-                            >
-                                Projects
-                            </MobileMenuLinks>
-                            <MobileMenuLinks
                                 href="#education"
                                 onClick={() => {
                                     setOpen(!open)
                                 }}
                             >
                                 Education
+                            </MobileMenuLinks>
+                            <MobileMenuLinks
+                                href="#projects"
+                                onClick={() => {
+                                    setOpen(!open)
+                                }}
+                            >
+                                Projects
                             </MobileMenuLinks>
                             <GitHubButton
                                 style={{

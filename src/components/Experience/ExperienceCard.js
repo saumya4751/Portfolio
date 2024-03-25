@@ -1,141 +1,25 @@
 import React from 'react';
-import styled from 'styled-components';
+import { Card, Top, Logo, Body, Description, Span, Role, Company, Duration } from '../StyledComponents/Card';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
-const Document = styled.img`
-    display: none;
-    height: 70px;
-    width: fit-content;
-    background-color: #000;
-    border-radius: 10px;
-    &:hover{
-        cursor: pointer;
-        opacity: 0.8;
-    }
-`
 
-const Span = styled.span`
-overflow: hidden;
-display: -webkit-box;
-max-width: 100%;
+const ExperienceCard = ({ experience, idx }) => {
+  const isEven = (idx % 2 === 0)
+  // const controls = useAnimation();
+  // const [ref, inView] = useInView({ threshold: 0.5 });
 
--webkit-line-clamp: 4;
--webkit-box-orient: vertical;
-text-overflow: ellipsis;
-`
+  // const variants = {
+  //   hidden: { opacity: 0, x:'-100%' },
+  //   visible: { opacity: 1, x: 0, transition: {duration: 0.1}}
+  // }
 
-const Card = styled.div`
-    width: 650px;
-    border-radius: 10px;
-    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-    padding: 12px 16px;
-    justify-content: space-between;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    transition: all 0.3s ease-in-out;
-    &:hover{
-        box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-        transform: translateY(-5px);
-    }
-    @media only screen and (max-width: 768px){
-        padding: 10px;
-        gap: 8px;
-        width: 300px;
-    }
-
-    &:hover ${Document}{
-        display: flex;
-    }
-
-    &:hover ${Span}{
-        overflow: visible;
-        -webkit-line-clamp: unset;
-
-    }
-    border: 0.1px solid #854CE6;
-`
-
-const Top = styled.div`
-    display: flex;
-    gap: 12px;
-    width: 100%;
-`;
-
-const Logo = styled.img`
-    height: 50px;
-    background-color: #000;
-    border-radius: 10px;
-    margin-top: 4px;
-
-    @media screen and (max-width: 768px) {
-        height: 40px;
-    }
-`;
-
-const Body = styled.div`
-    display:flex;
-    flex-direction: column;
-    width: 100%;
-`;
-
-const Role = styled.div`
-    font-size: 18px;
-    font-weight: 600;
-    color: ${({ theme }) => theme.text_primary+99};
-
-    @media screen and (max-width: 768px) {
-        font-size: 16px;
-    }
-`;
-
-const Company = styled.div`
-    font-size: 16px;
-    font-weight: 500px;
-    color: ${({ theme }) => theme.text_secondary+99};
-
-    @media screen and (max-width: 768px) {
-        font-size: 12px;
-    }
-`;
-
-const Duration = styled.div`
-    font-size: 12px;
-    font-weight: 400px;
-    color: ${({ theme }) => theme.text_secondary+80};
-
-    @media screen and (max-width: 768px) {
-        font-size: 10px;
-    }
-`;
-
-const Description = styled.div`
-    width: 100%;
-    font-size: 15px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_primary + 99};
-    margin-bottom: 10px;
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
-`
-// const Description = styled.div`
-//     width: 100%;
-//     display: flex;
-//     flex-direction: column;
-//     font-size: 14px;
-//     font-weight: 400px;
-//     color: ${({ theme }) => theme.text_primary+99};
-
-//     @media screen and (max-width: 768px) {
-//         font-size: 12px;
-//     };
-// `;
-
-const ExperienceCard = ({ experience }) => {
+  // if (inView) {
+  //   controls.start('visible');
+  // }
+  // ref={ref}animate={controls} initial="hidden" variants={variants}
   return (
-    <Card>
+    <Card isEven={isEven}> 
         <Top>
             <Logo src={experience.img} />
             <Body>
@@ -148,7 +32,6 @@ const ExperienceCard = ({ experience }) => {
             <Span>{experience.desc}</Span> <br/>
             <Span><b>Technologies:</b> {experience.skills}</Span>
         </Description>
-
     </Card>
   )
 }

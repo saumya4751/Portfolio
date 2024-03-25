@@ -1,12 +1,11 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const HomeContainer = styled.div`
-    background: ${({ theme }) => theme.card_light};
+    background: ${({ theme }) => theme.card_light+99};
     display: flex;
     justify-content: center;
     position: relative;
     padding: 75px 30px;
-    /* padding: 80px 30px; */
     @media (max-width: 960px) {
     padding: 66px 16px;
     }
@@ -15,7 +14,7 @@ export const HomeContainer = styled.div`
     }
     z-index: 1;
 
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 70% 97%, 0 100%);
 `;
 
 export const HomeBg = styled.div`
@@ -45,8 +44,11 @@ export const HomeInnerContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1300px;
   
+  @media screen and (max-width: 1200px) {
+    max-width: 1100px;
+  }
   @media screen and (max-width: 960px) {
     flex-direction: column;
   }
@@ -55,46 +57,27 @@ export const HomeInnerContainer = styled.div`
 export const HomeLeft = styled.div`
   width: 100%;
   order: 1;
-  @media (max-width: 960px) {
-    order: 2;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  @media (max-width: 640px) {
-    order: 2;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-`;
-
-export const HomeRight = styled.div`
-  width: 100%;
-  height: 70%;
-  display: flex;
-  order: 2;
-  justify-content: end;
-  gap: 12px;
   @media screen and (max-width: 960px) {
-    order: 1;
-    justify-content: center;
+    order: 2;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 80px;
   }
 
   @media screen and (max-width: 640px) {
+    order: 2;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
 export const Title = styled.div`
   font-size: 50px;
   font-weight: 700;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.text_title};
   line-height: 68px;
 
   @media screen and (max-width: 960px) {
@@ -147,6 +130,49 @@ export const Description = styled.div`
   }
 `;
 
+export const HomeRight = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  order: 2;
+  justify-content: end;
+  gap: 12px;
+  @media screen and (max-width: 960px) {
+    order: 1;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (max-width: 640px) {
+    margin-bottom: 30px;
+    max-height: 300px;
+  }
+`;
+
+export const Image = styled.img`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 410px;
+  max-height: 420px;
+  padding-bottom: 50px 50px;
+  /* box-shadow: 1px; */
+  border-radius: 50%; 
+  border: 0.5px solid ${({ theme }) => theme.primary};
+
+  @media screen and (max-width: 768px) {
+    display: none;
+    border-radius: 50%;
+    max-width: 250px;
+  }
+
+  @media screen and (max-width: 640px) {
+    max-width: 250px;
+    max-height: 300px;
+  }
+`;
+
 export const ResumeButton = styled.a`
     -webkit-appearance: button;
     -moz-appearance: button;
@@ -165,10 +191,12 @@ export const ResumeButton = styled.a`
     font-weight: 700;
     text-decoration: none;
     font-size: 16px;
-    transition: all 0.6s ease-in-out !important;
-    :hover {
-        background: ${({ theme }) => theme.primary};
+    transition: all 0.3s ease-in-out !important;
+
+    &:hover {
+        background-color: ${({ theme }) => theme.primary+99};
         color: ${({ theme }) => theme.white};     
+        transform: scale(0.99) translateZ(-5px); 
     }
     @media screen and (max-width: 768px) { 
     font-size: 14px;
@@ -178,24 +206,4 @@ export const ResumeButton = styled.a`
       padding: 12px 0;
       font-size: 18px;
   } 
-`;
-
-export const Image = styled.img`
-  position: relative;
-  width: 100%;
-  height: 100%;
-  max-width: 400px;
-  max-height: 400px;
-  border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.primary};
-
-  @media (max-width: 768px) {
-    max-width: 400px;
-    max-height: 400px;
-  }
-
-  @media (max-width: 640px) {
-    max-width: 280px;
-    max-height: 280px;
-  }
 `;

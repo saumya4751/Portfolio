@@ -1,15 +1,24 @@
 import React from 'react'
 import { Bio } from '../../data/db';
 import Typewriter from 'typewriter-effect';
-import { HomeBg, HomeContainer, HomeInnerContainer, HomeLeft, HomeRight, Description, Image, ResumeButton, Span, TextLoop, Title } from './HomeStyledComponents';
-import image from "../../images/image.jpg"
+import { HomeBg, HomeContainer, HomeInnerContainer, HomeLeft, HomeRight, Description, Image, ResumeButton, Span, TextLoop, Title } from '../StyledComponents/HomeStyledComponents';
+import image from "../../images/image.jpg";
+import styled from 'styled-components';
+
+const DotPattern = styled.svg`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+`;
 
 const Home = () => {
   return (
     <div id='home'>
+      
         <HomeContainer>
           <HomeBg>
-
           </HomeBg>
           <HomeInnerContainer>
             <HomeLeft>
@@ -37,6 +46,7 @@ const Home = () => {
             </HomeRight>
           </HomeInnerContainer>
         </HomeContainer>
+      
     </div>
   )
 }
