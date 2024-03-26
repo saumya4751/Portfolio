@@ -175,8 +175,8 @@ export const experiences = [
     role: "Teaching Assistant",
     company: "University of Dayton",
     date: "Aug 2023 - Present",
-    desc: "Worked in a cross-functional team to design a responsive user interface for multiple projects, ensuring cross-device compatibility. Led team in enhancing user experience by transitioning to single-page web applications, boosting user engagement by 20%. Implemented complex algorithms in Java, Python and Node.js to enhance various functionalities of web applications. Utilized Restful APIs to fetch data from external servers based on queries of customers and provided relevant information,	Integrated databases like PostgreSQL and MongoDB to efficiently manage, retrieve, and improve data speed by 25%",
-    skills: "Python, Java, Django, Flask, Spring, JavaScript (ES6), React.js, Node.js, MongoDB, PostgreSQL, Redux",
+    desc: "Hold office hours to teach concepts of Database Management Systems. Conduct help sessions to assist students with their doubts regarding the course or SQL. Grade students with their assignments, exams and projects",
+    skills: "SQL, MySQL, Oracle, Database Management Systems",
   },
   {
     id: 1,
