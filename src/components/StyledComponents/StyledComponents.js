@@ -40,6 +40,7 @@ export const Desc = styled.div`
     text-align: center;
     max-width: 600px;
     color: ${({ theme }) => theme.text_secondary+99};
+    display: none;
     @media (max-width: 768px) {
         font-size: 14px;
         margin-left: 20px;

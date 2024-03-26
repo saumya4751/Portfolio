@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Wrapper, Title, Desc } from '../StyledComponents/StyledComponents';
 import { ContactTitle, ContactInputMessage, ContactInput, ContactForm, ContactButton } from '../StyledComponents/ContactStyledComponents';
 import { useForm, ValidationError } from "@formspree/react";
+import { SiMinutemailer } from "react-icons/si";
 
 const Contact = () => {
     const [state, handleSubmit] = useForm("xwkgndgj")
@@ -22,21 +23,21 @@ const Contact = () => {
     }
 
     return (
-        <Container>
+        <Container id="contact">
             <Wrapper>
                 <Title>Contact</Title>
                 <Desc>
                     Feel free to reach out to me for any questions or opportunities!
                 </Desc>
                 <ContactForm onSubmit={handleSubmit}>
-                    <ContactTitle>Email Me 🚀</ContactTitle>
-                    <ContactInput id='email' type='email' placeholder="Your Email" name="email" />
+                    <ContactTitle>Email Me <SiMinutemailer /></ContactTitle>
+                    <ContactInput id='email' type='email' placeholder="Your Email" name="email" required />
                     <ValidationError prefix="Email" field="email" errors={state.errors} />
-                    <ContactInput id='name' placeholder="Your Name" name="name" />
+                    <ContactInput id='name' placeholder="Your Name" name="name" required/>
                     <ValidationError prefix="Name" field="name" errors={state.errors} />
-                    <ContactInput id='subject' placeholder="Subject" name="subject" />
+                    <ContactInput id='subject' placeholder="Subject" name="subject" required />
                     <ValidationError prefix="Subject" field="subject" errors={state.errors} />
-                    <ContactInputMessage id='message' placeholder="Message" name="message" rows={4} />
+                    <ContactInputMessage id='message' placeholder="Message" name="message" rows={4} required />
                     <ValidationError prefix="Message" field="message" errors={state.errors} />
                     <ContactButton type="submit" value="Send" disabled={state.submitting} />
                 </ContactForm>

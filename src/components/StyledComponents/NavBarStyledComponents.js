@@ -37,7 +37,7 @@ export const NavLogo = styled(LinkR)`
     align-items: center;
     text-decoration: none;
     margin-top: 18px;
-    @media (max-width: 640px) {
+    @media screen and (max-width: 640px) {
         padding: 0 0px;
     }
 `;
@@ -49,7 +49,7 @@ export const NavItems = styled.ul`
     justify-content:center;
     gap: 32px;
     padding: 0 10px;
-    list-style: none;    
+    list-style: none;  
 
     .active {
         border-bottom: 2px solid ${({ theme }) => theme.primary};
@@ -62,11 +62,11 @@ export const NavItems = styled.ul`
 
 export const NavLink = styled.a`
     color: ${({ theme }) => theme.text_primary};
-    
     font-weight: 500;
     cursor: pointer;
     transition: all 0.1s ease-in-out;
     text-decoration: none;
+    /* padding-left: 20px; */
 
     &:hover {
         color: ${({ theme }) => theme.primary};
