@@ -7,7 +7,7 @@ import { Nav, NavContainer, NavLogo, NavItems, NavLink, ButtonContainer, GitHubB
 import {motion, useScroll} from "framer-motion";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
-import '../../App.css'
+import '../../App.css';
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -45,6 +45,7 @@ const Navbar = () => {
                     <NavLink href='#experience'>Experience</NavLink>
                     <NavLink href='#education'>Education</NavLink>
                     <NavLink href='#projects'>Projects</NavLink>
+                    <NavLink href='#contact' padding='10px 10px'>Contact</NavLink>
                 </NavItems>
                 <ButtonContainer>
                     <GitHubButton 
@@ -57,7 +58,7 @@ const Navbar = () => {
                 </ButtonContainer>
                 { 
                     open && (
-                        <MobileMenu>
+                        <MobileMenu open={open}>
                             <MobileMenuLinks
                                 href="#home"
                                 onClick={() => {
@@ -97,6 +98,14 @@ const Navbar = () => {
                                 }}
                             >
                                 Projects
+                            </MobileMenuLinks>
+                            <MobileMenuLinks
+                                href="#contact"
+                                onClick={() => {
+                                    setOpen(!open)
+                                }}
+                            >
+                                Contact
                             </MobileMenuLinks>
                             <MobileButtonContainer>
                                 <GitHubButton

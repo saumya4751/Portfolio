@@ -29,7 +29,8 @@ export const FooterWrapper = styled.div`
 export const FooterLogo = styled.div`
   font-weight: 600;
   font-size: 20px;
-  color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.text_primary};
+  /* color: #000080; */
 `;
 
 export const FooterNav = styled.nav`
@@ -74,7 +75,7 @@ export const SocialMediaIcon = styled.a`
   margin: 0 1rem;
   font-size: 20px;
   cursor: pointer;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.text_primary+99};
   transition: color 0.2s ease-in-out;
   &:hover {
     color: ${({ theme }) => theme.primary};
