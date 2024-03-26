@@ -3,14 +3,17 @@ import { useTheme } from 'styled-components';
 import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
 import { Bio } from '../../data/db';
-import { Nav, NavContainer, NavLogo, NavItems, NavLink, ButtonContainer, GitHubButton, MobileIcon, MobileMenu, MobileMenuLinks, Span } from '../StyledComponents/NavBarStyledComponents';
+import { Nav, NavContainer, NavLogo, NavItems, NavLink, ButtonContainer, GitHubButton, MobileIcon, MobileMenu, MobileMenuLinks, MobileButtonContainer, Span } from '../StyledComponents/NavBarStyledComponents';
 import {motion, useScroll} from "framer-motion";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
 import '../../App.css'
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
     const theme = useTheme();
     const githubLink = Bio.github;
+    const LinkedIn = Bio.linkedin;
     const { scrollYProgress } = useScroll();
 
     return (
@@ -45,12 +48,16 @@ const Navbar = () => {
                 </NavItems>
                 <ButtonContainer>
                     <GitHubButton 
+                        style={{marginRight: '10px'}}
+                        onClick={() => window.open(LinkedIn, "_blank", "noreferrer")}
+                    ><FaLinkedin /></GitHubButton>
+                    <GitHubButton 
                         onClick={() => window.open(githubLink, "_blank", "noreferrer")}
-                    >GitHub Profile</GitHubButton>
+                    ><FaGithub /></GitHubButton>
                 </ButtonContainer>
                 { 
                     open && (
-                        <MobileMenu open={open}>
+                        <MobileMenu>
                             <MobileMenuLinks
                                 href="#home"
                                 onClick={() => {
@@ -91,17 +98,28 @@ const Navbar = () => {
                             >
                                 Projects
                             </MobileMenuLinks>
-                            <GitHubButton
-                                style={{
-                                    padding: "10px 16px",
-                                    background: `${theme.primary}`,
-                                    color: "white",
-                                    width: 'max-content',
-                                }}
-                                onClick={() => window.open(githubLink, "_blank", "noreferrer")}
-                            >
-                                Github Profile
-                            </GitHubButton>
+                            <MobileButtonContainer>
+                                <GitHubButton
+                                    style={{
+                                        padding: "10px 10px",
+                                        fontSize: "20px",
+                                        width: 'max-content',
+                                    }}
+                                    onClick={() => window.open(githubLink, "_blank", "noreferrer")}
+                                >
+                                    <FaLinkedin />
+                                </GitHubButton>
+                                <GitHubButton
+                                    style={{
+                                        padding: "10px 10px",
+                                        fontSize: "20px",
+                                        width: 'max-content',
+                                    }}
+                                    onClick={() => window.open(githubLink, "_blank", "noreferrer")}
+                                >
+                                    <FaGithub />
+                                </GitHubButton>
+                            </MobileButtonContainer>
                         </MobileMenu>
                     ) 
                 }

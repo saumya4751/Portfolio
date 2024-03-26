@@ -6,13 +6,20 @@ import { FooterContainer, FooterLogo, FooterNav, FooterNavLink, FooterWrapper, S
 // import TwitterIcon from "@mui/icons-material/Twitter";
 // import LinkedInIcon from "@mui/icons-material/LinkedIn";
 // import InstagramIcon from "@mui/icons-material/Instagram";
-
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
 
 const Footer = () => {
+  const LinkedIn = Bio.linkedin;
+  const GitHub = Bio.github;
   return (
     <FooterContainer>
       <FooterWrapper>
-        <FooterLogo>Saumya Shah</FooterLogo>
+        <FooterLogo>Saumya Shah </FooterLogo> 
+        <SocialMediaIcons>
+          <SocialMediaIcon onClick={() => window.open(LinkedIn)}><FaLinkedin /></SocialMediaIcon>
+          <SocialMediaIcon onClick={() => window.open(GitHub)}><FaGithub /></SocialMediaIcon>
+        </SocialMediaIcons>
         <FooterNav>
           <FooterNavLink href="#home">Home</FooterNavLink>
           <FooterNavLink href="#skills">Skills</FooterNavLink>
@@ -20,20 +27,6 @@ const Footer = () => {
           <FooterNavLink href="#education">Education</FooterNavLink>
           <FooterNavLink href="#projects">Projects</FooterNavLink>          
         </FooterNav>
-        {/* <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.facebook} target="display">
-            <FacebookIcon />
-          </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.twitter} target="display">
-            <TwitterIcon />
-          </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.linkedin} target="display">
-            <LinkedInIcon />
-          </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.insta} target="display">
-            <InstagramIcon />
-          </SocialMediaIcon>
-        </SocialMediaIcons> */}
         <Copyright>&copy; 2024 Saumya Shah. All rights reserved.</Copyright>
       </FooterWrapper>
     </FooterContainer>
