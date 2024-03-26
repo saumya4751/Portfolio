@@ -114,7 +114,7 @@ const Navbar = () => {
                                         fontSize: "20px",
                                         width: 'max-content',
                                     }}
-                                    onClick={() => window.open(githubLink, "_blank", "noreferrer")}
+                                    onClick={() => window.open(LinkedIn, "_blank", "noreferrer")}
                                 >
                                     <FaLinkedin />
                                 </GitHubButton>
