@@ -17,6 +17,7 @@ export const FooterContainer = styled.div`
 export const FooterWrapper = styled.div`
   width: 100%;
   max-width: 1200px;
+  margin-top: -10px;
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -52,6 +53,8 @@ export const FooterNavLink = styled.a`
   color: ${({ theme }) => theme.text_primary};
   text-decoration: none;
   font-size: 1.2rem;
+  font-size: 18px;
+  margin-bottom: -20px;
   transition: color 0.1s ease-in-out;
   &:hover {
     color: ${({ theme }) => theme.primary};
@@ -63,13 +66,14 @@ export const FooterNavLink = styled.a`
 
 export const SocialMediaIcons = styled.div`
   display: flex;
-  margin-top: 1rem;
+  margin-top: -10px;
 `;
 
 export const SocialMediaIcon = styled.a`
   display: inline-block;
   margin: 0 1rem;
-  font-size: 1.5rem;
+  font-size: 20px;
+  cursor: pointer;
   color: ${({ theme }) => theme.text_primary};
   transition: color 0.2s ease-in-out;
   &:hover {
@@ -79,6 +83,7 @@ export const SocialMediaIcon = styled.a`
 
 export const Copyright = styled.p`
   margin-top: 1.5rem;
+  margin-bottom: -30px;
   font-size: 0.9rem;
   color: ${({ theme }) => theme.soft2};
   text-align: center;

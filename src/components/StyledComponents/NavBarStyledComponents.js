@@ -1,5 +1,5 @@
 import {Link as LinkR} from "react-router-dom";
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const Nav = styled.div`
     /* background-color: ${({theme}) => theme.card_light}; */
@@ -89,20 +89,32 @@ export const ButtonContainer = styled.div`
         display: none;
     }
 `;
+export const MobileButtonContainer = styled.div`
+    width: 80%;  
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: -0 -10px;
+    /* @media screen and (max-width: 768px) {
+        display: none;
+    } */
+`;
 
-export const GitHubButton = styled.button`
-    border: 1px solid ${({ theme }) => theme.primary};
+export const GitHubButton = styled.a`
+    /* border: 1px solid ${({ theme }) => theme.primary}; */
     justify-content: center;
     display: flex;
     align-items: center;
     height: 70%;
-    border-radius: 20px;
-    color: ${({ theme }) => theme.primary};
+    border-radius: 40px;
+    color: ${({ theme }) => theme.text_primary};
     cursor: pointer;
-    padding: 0 30px;
+    /* padding: 0 60px; */
+    padding: 0 10px;
     font-weight: 500;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 24px;
     transition: all 0.3s ease-in-out;
     &:hover {     
         background: ${({ theme }) => theme.primary+99};
@@ -134,6 +146,7 @@ export const MobileIcon = styled.div`
     }
 `;
 
+
 export const MobileMenu = styled.div`
     display: flex;
     flex-direction: column;
@@ -144,13 +157,18 @@ export const MobileMenu = styled.div`
     right: 0;
     width: 100%;
     padding: 12px 40px 24px 40px;
-    background: ${({ theme }) => theme.card_light+99};
+    background-color: #f0f0f5;
+    /* background: ${({ theme }) => theme.card+99}; */
     transition: all 0.6s ease-in-out;
+    /* transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease; */
     transform: ${({ open }) => (open ? 'translateY(0)' : 'translateY(-100%)')};
     border-radius: 0 0 20px 20px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     opacity: ${({ open }) => (open ? '100%' : '0')};
     z-index: ${({ open }) => (open ? '1000' : '-1000')};
+    &.show {
+    display: block;
+  }
 `;
 
 export const MobileMenuLinks = styled.a`
