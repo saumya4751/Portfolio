@@ -5,7 +5,7 @@ const ProjectsCard = ({ project, setOpenModal }) => {
     const githubLink  = project.github
   return (
     <ProjectCard onClick={() => window.open(githubLink)}> 
-      {/* <ProjectImage src={project.image} /> */}
+      <ProjectImage src={project.image} />
       <Tags>
         {project.tags?.map((tag) => (
           <Tag>{tag}</Tag>

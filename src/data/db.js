@@ -1,3 +1,8 @@
+import connectify from "../images/connectify.jpg";
+import cammycab from "../images/cammycab.jpg";
+import shoestore from "../images/shoestore.jpg";
+import spam from "../images/spam.png";
+
 export const Bio = {
     name: "Saumya Shah",
     roles: [
@@ -161,9 +166,6 @@ export const Bio = {
           image:
             "https://t4.ftcdn.net/jpg/05/41/91/07/360_F_541910787_PROoPe5SAXpM1ZQbD0kJtXHDp1pjjfcV.jpg",
         },
-        
-        
-        
       ],
     },
 ];
@@ -227,7 +229,7 @@ export const projects = [
     description:
       "A chat application using MERN stack. Implemented real-time communication feature using Socket.io. ",
     image:
-      "https://github.com/rishavchanda/DecisionHub/raw/master/assets/testRule.jpg",
+      `${connectify}`,
     tags: [
       "JavaScript",
       "React.js",
@@ -247,7 +249,7 @@ export const projects = [
     description:
       "ShoeStore is a web application that allows users to search, filter and buy the shoes at best price",
     image:
-      "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
+    `${shoestore}`,
     tags: [
       "Python",
       "Django",
@@ -267,7 +269,7 @@ export const projects = [
     description:
       "Developed the logic behind detecting spam emails and Phishing URLs",
     image:
-      "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
+      `${spam}`,
     tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
     category: "machine learning",
     github: "https://github.com/saumya4751/detecting_phishing_urls",
@@ -279,7 +281,7 @@ export const projects = [
     description:
       "Developed an Uber like web application, on which users can book a cab for their destination",
     image:
-      "https://user-images.githubusercontent.com/64485885/234916413-96296f13-fe4b-4cc4-b215-e72bd7c27928.png",
+    `${cammycab}`,
     tags: [
       "Python",
       "Flask",
