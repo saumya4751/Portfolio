@@ -78,6 +78,10 @@ export const TimelineSection = styled.div`
     }
     @media (max-width: 768px) {
         align-items: start;
+        margin-left: -30px;
+    }
+    @media (max-width: 600px) {
+        align-items: start;
         margin-left: -50px;
     }
 `;

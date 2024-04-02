@@ -6,20 +6,24 @@ import { useInView } from 'react-intersection-observer';
 
 const ExperienceCard = ({ experience, idx }) => {
   const isEven = (idx % 2 === 0)
-  // const controls = useAnimation();
-  // const [ref, inView] = useInView({ threshold: 0.5 });
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ threshold: 0.1 });
 
-  // const variants = {
-  //   hidden: { opacity: 0, x:'-100%' },
-  //   visible: { opacity: 1, x: 0, transition: {duration: 0.1}}
-  // }
+  let variants = {
+    hidden: { opacity: 0, x:'-50%' },
+    visible: { opacity: 1, x: 0, transition: { duration: 1, ease: 'easeOut' }}
+  }
 
-  // if (inView) {
-  //   controls.start('visible');
-  // }
-  // ref={ref}animate={controls} initial="hidden" variants={variants}
+  if (isEven || window.innerWidth <= 940) {
+    variants.hidden.x = '50%'
+  } 
+
+  if (inView) {
+    controls.start('visible');
+  }
+  
   return (
-    <Card isEven={isEven}> 
+    <Card isEven={isEven} ref={ref} animate={controls} initial="hidden" variants={variants}> 
         <Top>
             <Logo src={experience.img} />
             <Body>
