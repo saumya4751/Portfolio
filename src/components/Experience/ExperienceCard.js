@@ -10,7 +10,7 @@ const ExperienceCard = ({ experience, idx }) => {
   const [ref, inView] = useInView({ threshold: 0.1 });
 
   let variants = {
-    hidden: { opacity: 0, x:'-50%' },
+    hidden: { opacity: 1, x:'-50%' },
     visible: { opacity: 1, x: 0, transition: { duration: 1, ease: 'easeOut' }}
   }
 

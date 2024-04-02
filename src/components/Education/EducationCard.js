@@ -9,15 +9,13 @@ const EducationCard = ({education, idx}) => {
   const [ref, inView] = useInView({ threshold: 0.1 });
 
   let variants = {
-    hidden: { opacity: 0, x:'-50%' },
+    hidden: { opacity: 1, x:'-50%' },
     visible: { opacity: 1, x: 0, transition: { duration: 1, ease: 'easeOut' }}
   }
 
   if (isEven || window.innerWidth <= 940) {
     variants.hidden.x = '50%'
   } 
-
-  // if ()
 
   if (inView) {
     controls.start('visible');
