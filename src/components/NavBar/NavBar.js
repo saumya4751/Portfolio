@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react';
 import { useTheme } from 'styled-components';
 import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
@@ -15,21 +15,33 @@ const Navbar = () => {
     const githubLink = Bio.github;
     const LinkedIn = Bio.linkedin;
     const { scrollYProgress } = useScroll();
+    const [logoClicked, setLogoClicked] = useState(false);
+
+    useEffect(() => {
+        if (logoClicked) {
+            window.scrollTo(0, 0)
+            setLogoClicked(false);
+        }
+    }, [logoClicked]);
+
+    const handleLogoClick = () => {
+        setLogoClicked(true);
+    }
 
     return (
         <Nav>
             <NavContainer>
-                <NavLogo to="/">
+                <NavLogo to='/' onClick={handleLogoClick}>
                     <a
                         style={{
                             display: "flex",
                             alignItems: "center",
-                            color: "#000080", 
+                            color: `${theme.primary}`, 
                             marginBottom: "20px",
                             cursor: "pointer",
                         }}
                     >
-                        <DiCssdeck size="3rem" /><Span>Saumya</Span>
+                        <DiCssdeck size="3rem" /><Span>Portfolio</Span>
                     </a>
                 </NavLogo>
                 <MobileIcon>

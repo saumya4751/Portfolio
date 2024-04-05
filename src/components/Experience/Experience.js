@@ -9,11 +9,12 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import ExperienceCard from './ExperienceCard';
 import LaptopTwoToneIcon from '@mui/icons-material/LaptopTwoTone';
+import { useTheme } from 'styled-components';
 
 
 const Experience = () => {
   const width = window.innerWidth;
-
+  const theme = useTheme();
   return (
     <Container id='experience'> 
     {/* // marginTop: '70px' */}
@@ -30,10 +31,10 @@ const Experience = () => {
                         {experiences.map((experience, idx) => (
                             <TimelineItem>
                                 <TimelineSeparator>
-                                    <TimelineDot variant='outlined' color='primary'><LaptopTwoToneIcon fontSize='small' /></TimelineDot>
+                                    <TimelineDot style={{ borderColor: `${theme.primary}` }} variant='outlined' color='primary'><LaptopTwoToneIcon fontSize='small' style={{ color: `${theme.text_title}`}} /></TimelineDot>
                                     {idx !== experiences.length - 1 && (
                                         <TimelineConnector sx={{ 
-                                            background: `#000099`,
+                                            background: `${theme.primary+99}`,
                                         }}  />
                                     )}
                                 </TimelineSeparator>
@@ -50,10 +51,10 @@ const Experience = () => {
                         {experiences.map((experience, idx) => (
                             <TimelineItem>
                                 <TimelineSeparator>
-                                    <TimelineDot variant='outlined' color='secondary' />
+                                <TimelineDot style={{ borderColor: `${theme.primary}` }} variant='outlined' color='primary'><LaptopTwoToneIcon fontSize='small' style={{ color: `${theme.text_title}`}} /></TimelineDot>
                                     {idx !== experiences.length - 1 && (
                                         <TimelineConnector sx={{ 
-                                            background: '#854CE6',
+                                            background: `${theme.primary+99}`,
                                             height: "220px",
                                         }}  />
                                     )}

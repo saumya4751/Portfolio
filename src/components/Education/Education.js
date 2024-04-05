@@ -10,10 +10,11 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import { educations } from '../../data/db';
 import EducationCard from './EducationCard';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
+import { useTheme } from 'styled-components';
 
 const Education = () => {
   const width = window.innerWidth;
-
+  const theme = useTheme();
   return (
     <Container id="education">
         <Wrapper>
@@ -27,10 +28,10 @@ const Education = () => {
                         {educations.map((education, idx) => (
                             <TimelineItem>
                                 <TimelineSeparator>
-                                    <TimelineDot variant='outlined' color='primary'><SchoolOutlinedIcon fontSize='small' /></TimelineDot>
+                                    <TimelineDot style={{ borderColor: `${theme.primary}` }} variant='outlined' color='primary'><SchoolOutlinedIcon fontSize='small' style={{ color: `${theme.text_title}`}} /></TimelineDot>
                                     {idx !== educations.length - 1 && (
                                         <TimelineConnector sx={{ 
-                                            background: '#000099',
+                                            background: `${theme.primary+99}`,
                                         }}  />
                                     )}
                                 </TimelineSeparator>
@@ -47,10 +48,10 @@ const Education = () => {
                         {educations.map((education, idx) => (
                             <TimelineItem>
                                 <TimelineSeparator>
-                                    <TimelineDot variant='outlined' color='secondary' />
+                                    <TimelineDot style={{ borderColor: `${theme.primary}` }} variant='outlined' color='primary'><SchoolOutlinedIcon fontSize='small' style={{ color: `${theme.text_title}`}} /></TimelineDot>
                                     {idx !== educations.length - 1 && (
                                         <TimelineConnector sx={{ 
-                                            background: '#854CE6',
+                                            background: `${theme.primary+99}`,
                                             height: "175px"
                                         }}  />
                                     )}

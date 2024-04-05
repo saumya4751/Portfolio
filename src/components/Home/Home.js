@@ -3,15 +3,7 @@ import { Bio } from '../../data/db';
 import Typewriter from 'typewriter-effect';
 import { HomeBg, HomeContainer, HomeInnerContainer, HomeLeft, HomeRight, Description, Image, ResumeButton, Span, TextLoop, Title } from '../StyledComponents/HomeStyledComponents';
 import image from "../../images/image.jpg";
-import styled from 'styled-components';
-
-const DotPattern = styled.svg`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-`;
+import image1 from "../../images/image1.png";
 
 const Home = () => {
   return (
@@ -42,7 +34,7 @@ const Home = () => {
               <ResumeButton href={Bio.resume} target="_blank">Check Resume</ResumeButton>
             </HomeLeft>
             <HomeRight>
-              <Image src={image} alt="Hero" />
+              <Image src={image1} alt="Hero" />
             </HomeRight>
           </HomeInnerContainer>
         </HomeContainer>

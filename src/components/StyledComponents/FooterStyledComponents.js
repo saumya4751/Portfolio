@@ -4,10 +4,10 @@ export const FooterContainer = styled.div`
   width: 100%;
   /* margin-top: 2%; */
   padding: 2rem 0;
-  border-top: 1px solid #b3b3ff;
+  border-top: 1px solid ${({ theme }) => theme.card_border};
   background-color: #e0e0eb;
   /* background-color: ${({ theme }) => theme.card_light}; */
-  background:linear-gradient(38.73deg, #e0e0eb 0%, #f0f0f5 50%), linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%);
+  background: ${( {theme} ) => theme.nav_bg};
   display: flex;
   justify-content: center;
   position: relative;
