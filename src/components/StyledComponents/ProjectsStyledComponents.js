@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ToggleButtonGroup = styled.div`
   display: flex;
-  border: 1.5px solid ${({ theme }) => theme.primary};
+  border: 1.5px solid ${({ theme }) => theme.primary+99};
   color: ${({ theme }) => theme.primary};
   font-size: 16px;
   border-radius: 12px;
@@ -34,7 +34,7 @@ export const ToggleButton = styled.div`
 
 export const Divider = styled.div`
   width: 1.5px;
-  background: ${({ theme }) => theme.primary};
+  background: ${({ theme }) => theme.primary+50};
 `;
 
 export const ProjectCardContainer = styled.div`

@@ -3,9 +3,10 @@ import styled, { keyframes } from 'styled-components';
 
 export const Nav = styled.div`
     /* background-color: ${({theme}) => theme.card_light}; */
-    background:linear-gradient(38.73deg, #e0e0eb 0%, #f0f0f5 50%), linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%);
+    /* background:linear-gradient(38.73deg, #e0e0eb 0%, #f0f0f5 50%), linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%); */
+    background: ${({ theme }) => theme.nav_bg};
     height: 70px;
-    border-bottom: 1px solid #b3b3ff;
+    border-bottom: 1px solid ${({ theme }) => theme.card_border};
     display: flex;
     align-items: center;
     justify-content: center;

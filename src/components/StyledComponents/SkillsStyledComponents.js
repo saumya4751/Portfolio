@@ -23,7 +23,7 @@ export const Skill = styled.div`
   &:hover {
     box-shadow: 0px 0px 12px rgba(0,0,0,0.2);
     transform: translateY(-5px);
-    background-color: #f3f2f2;
+    background-color: ${({ theme }) => theme.skills_hover};
   }
   
   @media (max-width: 768px) {

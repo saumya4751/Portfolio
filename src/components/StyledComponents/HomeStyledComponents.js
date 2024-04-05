@@ -136,6 +136,7 @@ export const HomeRight = styled.div`
   justify-content: end;
   gap: 12px;
   @media screen and (max-width: 960px) {
+    display: none;
     order: 1;
     justify-content: center;
     align-items: center;
@@ -150,14 +151,18 @@ export const HomeRight = styled.div`
 
 export const Image = styled.img`
   position: relative;
+  display: inline-block;
+  object-fit: cover;
   width: 100%;
   height: 100%;
   max-width: 410px;
   max-height: 420px;
   padding-bottom: 50px 50px;
-  /* box-shadow: 1px; */
+  background-color: ${({ theme }) => theme.img_bg};
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px;
   border-radius: 50%; 
-  border: 0.5px solid ${({ theme }) => theme.primary};
+  /* border: 0.5px solid ${({ theme }) => theme.primary}; */
 
   @media screen and (max-width: 768px) {
     display: none;

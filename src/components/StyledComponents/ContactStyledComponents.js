@@ -55,11 +55,7 @@ export const ContactButton = styled.input`
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  background: -webkit-linear-gradient(
-    225deg,
-    #ccccff 0%,
-    #b3b3ff 100%
-  );
+  background: ${({ theme }) => theme.contact_button};
   padding: 13px 16px;
   margin-top: 2px;
   border-radius: 12px;

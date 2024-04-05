@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 export const Span = styled.span`
 overflow: hidden;
@@ -10,68 +10,6 @@ max-width: 100%;
 -webkit-box-orient: vertical;
 text-overflow: ellipsis;
 `;
-
-// export const Card = styled.div`
-//     width: 580px;
-//     border-radius: 10px;
-//     box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-//     padding: 12px 16px;
-//     justify-content: space-between;
-//     position: relative;
-//     overflow: hidden;
-//     display: flex;
-//     flex-direction: column;
-//     gap: 12px;
-//     transition: all 0.3s ease-in-out;
-//     left: ${props => props.isEven ? "0%" : "-110%"};
-//     /* animation: ${({ isVisible }) => (isVisible ? slideInAnimation : 'none')} 0.5s forwards;
-//     opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
-//     transition: opacity 0.5s; */
-
-//     &:hover{
-//         box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-//         transform: translateY(-5px);
-//     }
-    
-//     @media only screen and (max-width: 1272px){
-//         padding: 10px;
-//         gap: 8px;
-//         width: 450px;
-//         left: ${props => props.isEven ? "0%" : "-115%"};
-//     }
-//     @media only screen and (max-width: 1048px){
-//         position: relative;
-//         padding: 10px;
-//         gap: 8px;
-//         width: 350px;
-//         left: ${props => props.isEven ? "0%" : "-120%"};
-//     }
-//     @media only screen and (max-width: 940px){
-//         position: relative;
-//         padding: 10px;
-//         gap: 8px;
-//         width: 750px;
-//         left: ${props => props.isEven ? "0%" : "0%"};
-//     }
-//     @media only screen and (max-width: 768px){
-//         position: relative;
-//         padding: 10px;
-//         gap: 8px;
-//         width: 500px;
-//         left: ${props => props.isEven ? "0%" : "0%"};
-//     }
-//     @media only screen and (max-width: 600px){
-//         padding: 10px;
-//         gap: 8px;
-//         width: 320px;
-//     }
-
-//     &:hover ${Span}{
-//         overflow: visible;
-//         -webkit-line-clamp: unset;
-//     }
-//     border: 0.1px solid #854CE6;
-// `;
 
 export const Card = styled(motion.div)`
     width: 580px;
@@ -111,7 +49,7 @@ export const Card = styled(motion.div)`
         position: relative;
         padding: 10px;
         gap: 8px;
-        width: 750px;
+        width: 650px;
         left: ${props => props.isEven ? "0%" : "0%"};
     }
     @media only screen and (max-width: 768px){

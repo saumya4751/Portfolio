@@ -1,17 +1,3 @@
-
-// export const darkTheme = {
-//     bg: "#090917",
-//     bgLight: "#1C1E27",
-//     primary: "#854CE6",
-//     text_primary: "#F2F3F4",
-//     text_secondary: "#b1b2b3",
-//     card: "#171721",
-//     card_light: "#191924",
-//     button: "#854CE6",
-//     white: "#FFFFFF",
-//     black: "#000000",
-//   };
-// 000099
 export const lightTheme = {
     bg:"#FFFFFF",
     bgLight: "#f0f0f0",
@@ -21,39 +7,33 @@ export const lightTheme = {
     text_primary:"#333333",
     text_secondary:"#404040",
     card:"#f0f0f5",
-    nav_bg: "#e0e0eb",
+    nav_bg: "linear-gradient(38.73deg, #e0e0eb 0%, #f0f0f5 50%)",
     card_light: '#f0f0f5',
+    app_lg: "linear-gradient(38.73deg,#ffffff 0%, #ffffff 25%, rgb(240, 240, 245) 50%, #ffffff 75%, #ffffff 100% )",
     button:"#5c5b5b",
+    contact_button: "-webkit-linear-gradient(225deg, #ccccff 0%, #b3b3ff 100%)",
+    skills_hover: "#f3f2f2",
+    img_bg: "#e6e6ff",
     white:"#FFFFFF",
     black:"#000000",
 }
 
-
-
-
-
-
-
-// export const darkTheme = {
-//     bg: "#090917",
-//     bgLight: "#1C1E27",
-//     primary: "#854CE6",
-//     text_primary: "#F2F3F4",
-//     text_secondary: "#b1b2b3",
-//     card: "#171721",
-//     card_light: "#191924",
-//     button: "#854CE6",
-//     white: "#FFFFFF",
-//     black: "#000000",
-//   };
-  
-//   export const lightTheme = {
-//     bg: "#FFFFFF",
-//     bgLight: "#f0f0f0",
-//     primary: "#be1adb",
-//     text_primary: "#111111",
-//     text_secondary: "#48494a",
-//     card: "#FFFFFF",
-//     card_light: "#FFFFFF",
-//     button: "#5c5b5b",
-//   };
+export const darkTheme = {
+    bg: "#000015",
+    bgLight: "#1C1E27",
+    primary: "#3333ff",
+    text_primary: "#F2F3F4",
+    text_secondary: "#b1b2b3",
+    card: "#00000E",
+    card_border: "#394146",
+    card_light: "#00001a",
+    text_title: "#e3e6e8",
+    nav_bg: "linear-gradient(30.73deg, #000015 50%, #00001a 100%)", //000033, 00284d
+    app_lg: "linear-gradient(38.73deg,#000015 0%, #000015 25%, #00001a 50%, #000015 75%, #000015 100% )",
+    button: "#854CE6",
+    contact_button: "-webkit-linear-gradient(225deg, #00004d 30%, #000066 60%)",
+    skills_hover: "#00000C",
+    img_bg: "#0F1F2F",
+    white: "#FFFFFF",
+    black: "#000000",
+  };

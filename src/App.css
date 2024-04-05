@@ -19,26 +19,24 @@ body{
 }
 
 /* width */
-::-webkit-scrollbar {
-    width: 4px;
+/* ::-webkit-scrollbar {
+    width: 15px;
     height: 80px;
   }
   
-  /* Track */
   ::-webkit-scrollbar-track {
     background:#222A35;
   }
   
-  /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #575C66;
     border-radius: 6px;
   }
   
-  /* Handle on hover */
+
   ::-webkit-scrollbar-thumb:hover {
     background: #626970;
-  }
+  } */
 
 .progress-bar {
   position: fixed;
