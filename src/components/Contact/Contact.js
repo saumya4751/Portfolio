@@ -3,9 +3,11 @@ import { Container, Wrapper, Title, Desc } from '../StyledComponents/StyledCompo
 import { ContactTitle, ContactInputMessage, ContactInput, ContactForm, ContactButton } from '../StyledComponents/ContactStyledComponents';
 import { useForm, ValidationError } from "@formspree/react";
 import { SiMinutemailer } from "react-icons/si";
+import { useTheme } from 'styled-components';
 
 const Contact = () => {
     const [state, handleSubmit] = useForm("xwkgndgj")
+    const theme = useTheme();
     if (state.succeeded) {
         return (
             <Container>
@@ -14,8 +16,14 @@ const Contact = () => {
                     <Desc>
                         Feel free to reach out to me for any questions or opportunities!
                     </Desc>
-                    <ContactForm style={{ alignItems: 'center'}}>
-                        <p>Thanks for Submitting form</p>
+                    <ContactForm style={{ alignItems: 'center' }}>
+                        <p
+
+                            style={{ color: `${theme.text_secondary+99}` }}
+                            // style={{ color: 'black'}}
+                        >
+                            Thank you for reaching out! Your Message has been received. I'll get back to you shortly.
+                        </p>
                     </ContactForm>
                 </Wrapper>
             </Container>

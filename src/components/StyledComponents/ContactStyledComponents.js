@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const ContactForm = styled.form`
   width: 95%;
   max-width: 600px;
-  display: flex;
+  /* display: flex; */
+  display: grid;
   flex-direction: column;
   /* background-color: rgba(17, 25, 40, 0.83); */
   /* border: 1px solid rgba(255, 255, 255, 0.125); */
@@ -38,6 +39,9 @@ export const ContactInput = styled.input`
 
 export const ContactInputMessage = styled.textarea`
   flex: 1;
+  resize: vertical;
+  min-height: 100px;
+  max-height: 400px;
   background-color: transparent;
   border: 1px solid ${({ theme }) => theme.text_secondary + 50};
   outline: none;
