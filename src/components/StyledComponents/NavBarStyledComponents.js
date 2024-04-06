@@ -158,8 +158,7 @@ export const MobileMenu = styled.div`
     right: 0;
     width: 100%;
     padding: 12px 40px 24px 40px;
-    background-color: #f0f0f5;
-    /* background: ${({ theme }) => theme.card+99}; */
+    background-color: ${({ theme }) => theme.mob_menu_bg};
     transition: all 0.6s ease-in-out;
     /* transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease; */
     transform: ${({ open }) => (open ? 'translateY(0)' : 'translateY(-100%)')};
