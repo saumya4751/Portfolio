@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div className="App">
-      <ThemeProvider theme={darkTheme} >
+      <ThemeProvider theme={theme} >
         <Router>
           <Navbar /> 
           <Body>
