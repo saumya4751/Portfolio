@@ -41,7 +41,7 @@ const Navbar = () => {
                             cursor: "pointer",
                         }}
                     >
-                        <DiCssdeck size="3rem" /><Span>Portfolio</Span>
+                        <DiCssdeck size="3rem" /><Span>Saumya</Span>
                     </a>
                 </NavLogo>
                 <MobileIcon>
