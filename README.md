@@ -24,8 +24,8 @@ To get a local copy up and running, follow these simple steps.
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/yourportfolio.git
-cd yourportfolio
+git clone https://github.com/saumya4751/Portfolio.git
+cd Portfolio
 
 # Install NPM packages
 npm install
