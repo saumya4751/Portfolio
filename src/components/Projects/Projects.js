@@ -41,6 +41,13 @@ const Projects = () => {
           >
             MACHINE LEARNING
           </ToggleButton>
+          <Divider />
+          <ToggleButton
+            active={toggle === "other"}
+            onClick={() => setToggle("other")}
+          >
+            Others
+          </ToggleButton>
         </ToggleButtonGroup>
         <ProjectCardContainer>
           {toggle === "all" &&

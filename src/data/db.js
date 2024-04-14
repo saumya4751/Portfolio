@@ -1,6 +1,8 @@
 import connectify from "../images/connectify.jpg";
-import cammycab from "../images/cammycab.jpg";
+import rent from "../images/rent.jpg";
 import shoestore from "../images/shoestore.jpg";
+import ws from "../images/ws.png";
+import imageclassification from "../images/image-classification.jpg";
 import spam from "../images/spam.png";
 
 export const Bio = {
@@ -244,10 +246,10 @@ export const projects = [
   },
   {
     id: 1,
-    title: "ShoeStore",
+    title: "TrendyStore",
     date: "Nov 2020 - Jan 2021",
     description:
-      "ShoeStore is a web application that allows users to search, filter and buy the shoes at best price",
+      "TrendyStore is a web application that allows users to search, filter and buy shoes and clothes at best price",
     image:
     `${shoestore}`,
     tags: [
@@ -260,7 +262,7 @@ export const projects = [
       "SQLite3",
     ],
     category: "web app",
-    github: "https://github.com/saumya4751/ShoeStore",
+    github: "https://github.com/saumya4751/TrendyStore",
   },
   {
     id: 2,
@@ -270,28 +272,58 @@ export const projects = [
       "Developed the logic behind detecting spam emails and Phishing URLs",
     image:
       `${spam}`,
-    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
+      tags: ["Python", "Tensorflow", "ImageDataGenerator", "Numpy", "Matplotlib"],
     category: "machine learning",
     github: "https://github.com/saumya4751/detecting_phishing_urls",
   },
   {
     id: 3,
-    title: "Flask Cab",
-    date: "Nov 2021 - Feb 2022",
+    title: "Image Classification",
+    date: "Sept 2023 - Oct 2023",
+    description:
+      "Built and trained a model that can classify images and detect which type of bird or painting an image contains",
+    image:
+      `${imageclassification}`,
+    tags: ["Python", "Tensorflow", "Numpy", "Matplotlib", "ImageDataGenerator"],
+    category: "machine learning",
+    github: "https://github.com/saumya4751/image_classification/blob/main/Birds_image_classification.ipynb",
+  },
+  {
+    id: 4,
+    title: "RentPe",
+    date: "Aug 2018 - Feb 2019",
     description:
       "Developed an Uber like web application, on which users can book a cab for their destination",
     image:
-    `${cammycab}`,
+    `${rent}`,
     tags: [
       "Python",
-      "Flask",
-      "SQLite3",
+      "Django",
+      "MySQL",
       "JavaScript",
       "BootStrap",
       "HTML",
       "CSS",
     ],
     category: "web app",
-    github: "https://github.com/saumya4751/flask_cab",
+    github: "https://github.com/saumya4751/RentPe",
+  },
+  {
+    id: 5,
+    title: "Web Scraping",
+    date: "Oct 2022 - Nov 2022",
+    description:
+      "Worked on web scraping to visualize the data from 2 websites, IMDB and a Weather website",
+    image:
+    `${ws}`,
+    tags: [
+      "Python",
+      "BeautifulSoup4",
+      "Numpy",
+      "Pandas",
+      "Matplotlib",
+    ],
+    category: "other",
+    github: "https://github.com/saumya4751/RentPe",
   },
 ];

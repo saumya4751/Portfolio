@@ -196,6 +196,7 @@ export const ProjectDetails = styled.div`
   flex-direction: column;
   gap: 0px;
   padding: 0px 2px;
+  /* margin-top: 10px; */
 `;
 
 export const ProjectTitle = styled.div`
