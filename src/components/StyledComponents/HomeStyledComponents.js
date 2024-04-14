@@ -162,7 +162,6 @@ export const Image = styled.img`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   box-shadow: 1px;
   border-radius: 50%; 
-  /* border: 0.5px solid ${({ theme }) => theme.primary}; */
 
   @media screen and (max-width: 768px) {
     display: none;
