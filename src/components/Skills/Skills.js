@@ -4,6 +4,7 @@ import { Skill, SkillImage, SkillItem, SkillList, SkillTitle, SkillsContainer } 
 import { skills } from '../../data/db';
 
 const Skills = () => {
+
   return (
     <Container id="skills">
       <Wrapper>

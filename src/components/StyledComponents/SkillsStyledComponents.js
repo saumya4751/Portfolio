@@ -76,4 +76,6 @@ export const SkillItem = styled.div`
 export const SkillImage = styled.img`
   width: 24px;
   height: 24px;
+  /* background-color: white; */
+  /* border-radius: 50%; */
 `;
