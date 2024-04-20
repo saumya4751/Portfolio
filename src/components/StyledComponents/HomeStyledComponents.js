@@ -8,6 +8,7 @@ export const HomeContainer = styled.div`
     padding: 75px 30px;
     @media (max-width: 960px) {
     padding: 66px 16px;
+    min-height: 90vh;
     }
     @media (max-width: 640) {
     padding: 32px 16px;
@@ -54,7 +55,6 @@ export const HomeInnerContainer = styled.div`
 export const HomeLeft = styled.div`
   width: 100%;
   order: 1;
-  min-height: 100vh;
   @media screen and (max-width: 960px) {
     order: 2;
     margin-bottom: 30px;
