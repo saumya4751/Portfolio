@@ -54,7 +54,6 @@ export const HomeInnerContainer = styled.div`
 export const HomeLeft = styled.div`
   width: 100%;
   order: 1;
-  min-height: 100vh;
   @media screen and (max-width: 960px) {
     order: 2;
     margin-bottom: 30px;
