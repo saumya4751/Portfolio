@@ -21,11 +21,3 @@ const ProjectsCard = ({ project, setOpenModal }) => {
 };
 
 export default ProjectsCard;
-
-// const ProjectsCard = () => {
-//   return (
-//     <div>ProjectsCard</div>
-//   )
-// }
-
-// export default ProjectsCard

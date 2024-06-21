@@ -46,7 +46,7 @@ const Projects = () => {
             active={toggle === "other"}
             onClick={() => setToggle("other")}
           >
-            Others
+            DATA ANALYSIS
           </ToggleButton>
         </ToggleButtonGroup>
         <ProjectCardContainer>
@@ -70,19 +70,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-
-// const Projects = () => {
-//   return (
-//     <Container id="projects">
-//         <Wrapper>
-//         <Title>Education</Title>
-//             <Desc>
-//                 My education has been a journey of self-discovery and growth. My educational details are as follows.
-//             </Desc>
-//         </Wrapper>
-//     </Container>
-//   )
-// }
-
-// export default Projects
