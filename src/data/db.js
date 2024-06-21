@@ -19,7 +19,7 @@ export const Bio = {
       "Devoted full-stack developer, focusing on turning innovative ideas into scalable, dependable software solutions. Proficient in both front-end and back-end programming, dedicated to leveraging cutting-edge technologies and clean code to produce user-friendly experiences",
     github: "https://github.com/saumya4751",
     resume:
-      "https://drive.google.com/file/d/1Bt6pZ9E2s_b0Ec_HHS-1Cgdk2FRst2BB/view?usp=sharing",
+      "https://drive.google.com/file/d/1lxghqpG6W2eLcup1zA3HHEakXNvwnCP7/view?usp=drive_link",
     linkedin: "https://www.linkedin.com/in/saumya4751/",
   };
 

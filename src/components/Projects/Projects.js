@@ -46,7 +46,7 @@ const Projects = () => {
             active={toggle === "other"}
             onClick={() => setToggle("other")}
           >
-            Others
+            DATA ANALYSIS
           </ToggleButton>
         </ToggleButtonGroup>
         <ProjectCardContainer>
