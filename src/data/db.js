@@ -12,6 +12,7 @@ export const Bio = {
     name: "Saumya Shah",
     roles: [
       "Full Stack Engineer",
+      "Software Engineer",
       "Frontend Engineer",
       "Backend Engineer",
     ],
@@ -19,7 +20,7 @@ export const Bio = {
       "Devoted full-stack developer, focusing on turning innovative ideas into scalable, dependable software solutions. Proficient in both front-end and back-end programming, dedicated to leveraging cutting-edge technologies and clean code to produce user-friendly experiences",
     github: "https://github.com/saumya4751",
     resume:
-      "https://drive.google.com/file/d/1lxghqpG6W2eLcup1zA3HHEakXNvwnCP7/view?usp=drive_link",
+      "https://drive.google.com/file/d/1zHMY3Fjb0AOcFUR-SkxVW8Mh2pCVvF2a/view?usp=drive_link",
     linkedin: "https://www.linkedin.com/in/saumya4751/",
   };
 
@@ -218,15 +219,24 @@ export const Bio = {
 export const experiences = [
   {
     id: 0,
+    img: "https://media.licdn.com/dms/image/D560BAQE8M4sRW-0kbg/company-logo_200_200/0/1697828407648/infinite_options_llc_logo?e=2147483647&v=beta&t=6mWz4LZITEpp1aKl7SvxUonP2926vE8YaPt5dH9kgm4",
+    role: "Software Engineer",
+    company: "Infinite Options LLC",
+    date: "July 2024 - Present",
+    desc: "Engineered robust backend solutions, creating efficient and scalable endpoints to streamline data flow and enhance system performance. Developed complex SQL queries to optimize database interactions, significantly improving data retrieval speeds and reliability. Authored and maintained API documentation, ensuring clear communication and seamless integration for development teams. Collaborated in cross-functional code integration meetings, contributing to cohesive team strategies and successful project outcomes",
+    skills: "Python, Flask, MySQL, GitHub",
+  },
+  {
+    id: 1,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeErvte9JXsdyWxjryLy1o516emLS6UFDUhRZ4Hgf8CA&s",
     role: "Teaching Assistant",
     company: "University of Dayton",
-    date: "Aug 2023 - Present",
+    date: "Aug 2023 - May 2024",
     desc: "Hold office hours to teach concepts of Database Management Systems. Leveraging Oracle 11g Express Addition to run SQL scripts and manage databases. Conduct help sessions to assist students with their doubts about Database Management systems. Grade students with their assignments, exams and projects",
     skills: "SQL, MySQL, Oracle, Database Management Systems",
   },
   {
-    id: 1,
+    id: 2,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAMYaPt063CvF3zH9MaS1rbEoNoYOBAoygyw&usqp=CAU",
     role: "Full Stack Engineer",
     company: "Akash Technolabs",
@@ -235,7 +245,7 @@ export const experiences = [
     skills: "Python, Java, Django, Flask, Spring, JavaScript (ES6), React.js, Node.js, MongoDB, PostgreSQL, Redux",
   },
   {
-    id: 2,
+    id: 3,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAMYaPt063CvF3zH9MaS1rbEoNoYOBAoygyw&usqp=CAU",
     role: "Software Engineer Intern",
     company: "Akash Technolabs",
