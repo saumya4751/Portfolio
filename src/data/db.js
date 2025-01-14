@@ -223,8 +223,8 @@ export const experiences = [
     role: "Software Engineer",
     company: "Infinite Options LLC",
     date: "July 2024 - Present",
-    desc: "Engineered robust backend solutions, creating efficient and scalable endpoints to streamline data flow and enhance system performance. Developed complex SQL queries to optimize database interactions, significantly improving data retrieval speeds and reliability. Authored and maintained API documentation, ensuring clear communication and seamless integration for development teams. Collaborated in cross-functional code integration meetings, contributing to cohesive team strategies and successful project outcomes",
-    skills: "Python, Flask, MySQL, GitHub",
+    desc: " Developed RESTful APIs using Python and Flask, enhancing application responsiveness and data exchange efficiency, further augmented by advanced application monitoring and error detection using Prometheus and Grafana. Migrated backend services to AWS EC2 from Lambda functions and utilized AWS S3 for robust large object storage. These changes significantly enhanced system performance, scalability, and data-handling capabilities, ensuring high availability and integrity across distributed systems. Leveraged Linux extensively to manage EC2 instance configurations, write bash scripts for automation, and schedule cron jobs, significantly improving deployment processes and system stability through workflow automation. Implemented Docker to containerize backend applications, seamlessly integrated into CI/CD pipelines with GitHub Actions for automated Docker image creation, which facilitated faster and reduced deployment time by 20%. Conducted automated testing with PyTest to ensure code reliability and reduce deployment bugs, complemented by thorough GitHub code reviews to uphold code quality, standard compliance, and collaborative development practices. Enhanced security protocols and user authentication measures using JWT, ensuring robust system integrity and user data protection, while maintaining compliance with security best practices and regulatory requirements",
+    skills: "Python, Flask, PyTest, Docker, AWS (EC2, S3, RDS), Linux, Prometheus, Grafana, GitHub Actions, JWT, CI/CD Pipelines, Bash Scripting, MySQL, SQL",
   },
   {
     id: 1,
@@ -239,10 +239,10 @@ export const experiences = [
     id: 2,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAMYaPt063CvF3zH9MaS1rbEoNoYOBAoygyw&usqp=CAU",
     role: "Full Stack Engineer",
-    company: "Akash Technolabs",
-    date: "Sept 2020 - July 2022",
-    desc: "Worked in a cross-functional team to design a responsive user interface for multiple projects, ensuring cross-device compatibility. Led team in enhancing user experience by transitioning to single-page web applications, boosting user engagement by 20%. Implemented algorithms using Java, Node.js and Python to reduce load time by 15% and enhance search operations. Used Machine Learning models to implement a personalized product recommendation system, based on user behaviour and purchase history, resulting in a 20% improvement in user engagement and conversion rates. Utilized RESTful APIs to fetch data from external servers based on queries of customers and provided relevant information. Integrated PostgreSQL and MongoDB databases with GraphQL to efficiently manage, retrieve, and improve data speed by 25%. Utilized GitHub Actions to streamline CI/CD workflows for diverse projects, ensuring efficient integration, testing and deployment",
-    skills: "Python, Java, Django, Flask, Spring, JavaScript (ES6), React.js, Node.js, MongoDB, PostgreSQL, Redux",
+    company: "Aekta Electricals",
+    date: "Sept 2018 - July 2022",
+    desc: "Developed and maintained scalable RESTful APIs using Java and Spring Boot, integrating external services to ensure seamless and efficient data communication between frontend and backend systems. Spearheaded the development of high-performance backend services using Python and Django, integrating PostgreSQL and Redis for optimized data retrieval, significantly improving system responsiveness by 15%. Developed and maintained robust, scalable, and highly efficient GraphQL APIs using Express.js on Node.js, enabling precise and optimized data fetching that significantly reduces payloads and enhances application performance. Engineered responsive single-page applications (SPAs) with React.js and Redux, delivering seamless user experiences across devices by effectively managing state and streamlining data flow. Implemented and optimized Jenkins for robust, streamlined continuous integration and delivery pipelines, drastically reducing deployment times and significantly enhancing code quality through advanced automated processes. Designed and optimized a comprehensive, adaptable AWS cloud infrastructure, utilizing EC2, CloudFront, Load Balancers, and Auto Scaling to ensure high availability, peak performance, and achieve 99.9% uptime. Enforced strict, advanced security measures by configuring AWS IAM roles, substantially augmenting system integrity and data protection with comprehensive access controls and robust security protocols.",
+    skills: "Python, Django, PostgreSQL, Redis, Node.js, Express.js, GraphQL, React.js, Redux, Jenkins, Selenium, Amazon Web Services, MongoDB",
   },
   {
     id: 3,
@@ -250,8 +250,8 @@ export const experiences = [
     role: "Software Engineer Intern",
     company: "Akash Technolabs",
     date: "July 2019 - May 2020",
-    desc: "Pioneered the development of a cross-device web application, optimizing user experiences for passengers, drivers, and admins. Spearheaded the robust full-stack design with Flask (Python) for the backend, React.js and Redux for the frontend and integrating Google Maps API for real-time location tracking, enhancing the overall efficiency of the cab booking process, Leveraged SQLite3 to manage the database proficiently, ensuring data integrity and efficient retrieval for seamless functionalities.",
-    skills: "Python, Flask, JavaScript (ES6), React.js, Redux, HTML, CSS",
+    desc: "Played a key role in the end-to-end development of a cross-platform cab booking application, handling front-end, back-end, and middleware with Google Maps API to enhance real-time tracking features and user experience. Designed and optimized database schemas with MySQL, managing data efficiently for passengers, drivers, and administrative functions, which ensured seamless data flow and integrity across the application components. Worked closely with a cross-functional team in an Agile environment to meet tight deadlines and deliver high-quality features, contributing to the project's success and consistently exceeding expectations.",
+    skills: "Python, Flask, JavaScript, React.js, MySQL, Google Maps API, Selenium",
   }
 ];
 
