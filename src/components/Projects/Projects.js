@@ -6,7 +6,8 @@ import { ProjectCardContainer, ToggleButton, ToggleButtonGroup, Divider,  } from
 
 
 const Projects = () => {
-  const [toggle, setToggle] = useState("all");
+  const [toggle, setToggle] = useState("web app");
+  // const [toggle, setToggle] = useState("all");
 
   return (
     <Container id="projects">
@@ -21,13 +22,13 @@ const Projects = () => {
           apps. Here are some of my projects.
         </Desc>
         <ToggleButtonGroup>
-          <ToggleButton
+          {/* <ToggleButton
             active={toggle === "all"}
             onClick={() => setToggle("all")}
           >
             ALL
           </ToggleButton>
-          <Divider />
+          <Divider /> */}
           <ToggleButton
             active={toggle === "web app"}
             onClick={() => setToggle("web app")}
@@ -47,6 +48,13 @@ const Projects = () => {
             onClick={() => setToggle("other")}
           >
             DATA ANALYSIS
+          </ToggleButton>
+          <Divider />
+          <ToggleButton
+            active={toggle === "open source"}
+            onClick={() => setToggle("open source")}
+          >
+            OPEN SOURCE
           </ToggleButton>
         </ToggleButtonGroup>
         <ProjectCardContainer>

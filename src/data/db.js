@@ -7,20 +7,22 @@ import spam from "../images/spam.png";
 import spring from "../images/spring.png";
 import sdlc from "../images/sdlc.png";
 import flask from "../images/flask.png";
+import opensource from "../images/opensource.png";
 
 export const Bio = {
     name: "Saumya Shah",
     roles: [
-      "Full Stack Engineer",
       "Software Engineer",
-      "Frontend Engineer",
+      "Open-Source Contributor",
+      "Full Stack Engineer",
       "Backend Engineer",
+      "Frontend Engineer",
     ],
     description:
       "Devoted full-stack developer, focusing on turning innovative ideas into scalable, dependable software solutions. Proficient in both front-end and back-end programming, dedicated to leveraging cutting-edge technologies and clean code to produce user-friendly experiences",
     github: "https://github.com/saumya4751",
     resume:
-      "https://drive.google.com/file/d/1zHMY3Fjb0AOcFUR-SkxVW8Mh2pCVvF2a/view?usp=drive_link",
+      "https://drive.google.com/file/d/1dHc-yhVcuRFZVY7wlZIC05TabtSeMyi9/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/saumya4751/",
   };
 
@@ -219,15 +221,24 @@ export const Bio = {
 export const experiences = [
   {
     id: 0,
-    img: "https://media.licdn.com/dms/image/D560BAQE8M4sRW-0kbg/company-logo_200_200/0/1697828407648/infinite_options_llc_logo?e=2147483647&v=beta&t=6mWz4LZITEpp1aKl7SvxUonP2926vE8YaPt5dH9kgm4",
+    img: "https://media.licdn.com/dms/image/v2/C560BAQGQ9cuzhEi0kw/company-logo_200_200/company-logo_200_200/0/1644944765154/aurahomeinc_logo?e=1749081600&v=beta&t=DmsQut8QC_xvI6KAuSoqDBvdlG0VtzQ0m3EcQQph5cc",
     role: "Software Engineer",
-    company: "Infinite Options LLC",
+    company: "Computing Aura LLC",
     date: "July 2024 - Present",
-    desc: " Developed RESTful APIs using Python and Flask, enhancing application responsiveness and data exchange efficiency, further augmented by advanced application monitoring and error detection using Prometheus and Grafana. Migrated backend services to AWS EC2 from Lambda functions and utilized AWS S3 for robust large object storage. These changes significantly enhanced system performance, scalability, and data-handling capabilities, ensuring high availability and integrity across distributed systems. Leveraged Linux extensively to manage EC2 instance configurations, write bash scripts for automation, and schedule cron jobs, significantly improving deployment processes and system stability through workflow automation. Implemented Docker to containerize backend applications, seamlessly integrated into CI/CD pipelines with GitHub Actions for automated Docker image creation, which facilitated faster and reduced deployment time by 20%. Conducted automated testing with PyTest to ensure code reliability and reduce deployment bugs, complemented by thorough GitHub code reviews to uphold code quality, standard compliance, and collaborative development practices. Enhanced security protocols and user authentication measures using JWT, ensuring robust system integrity and user data protection, while maintaining compliance with security best practices and regulatory requirements",
-    skills: "Python, Flask, PyTest, Docker, AWS (EC2, S3, RDS), Linux, Prometheus, Grafana, GitHub Actions, JWT, CI/CD Pipelines, Bash Scripting, MySQL, SQL",
+    desc: " Designed and implemented recommendation services using optimized database queries and multiple user parameters, including location, preferences, and demographic data, improving match quality by 35% and increasing user engagement by 28%. Developed secure user authentication and profile microservices and RESTful APIs with Python/Flask, optimizing database schemas and implementing Redis caching that reduced query time by 45% and unauthorized access by 95%, supporting 10,000+ daily users. Built an AI-powered search system with OpenAI API that improved match relevance by 40% and enhanced user satisfaction metrics. Implemented frontend-backend integrations with React.js, standardizing API formats and ensuring smooth data flow across services.	Developed a comprehensive API testing framework with PyTest, implementing automated data validation, verifying complete data lifecycle operations, and ensuring end-to-end integrity across all service endpoints with pre/post-test data management.	Migrated backend services from AWS Lambda to AWS EC2, implementing a horizontal scaling architecture with auto-scaling groups that eliminated cold-start latency issues and reduced average response time by 62%. Containerized microservices using Docker and established CI/CD pipelines with GitHub Actions, decreasing deployment time by 75% and reducing deployment-related incidents by 80% while enabling 3x more frequent releases across 12+ services. Managed Linux servers with bash automation scripts and implemented Git workflows for streamlined version control. Implemented Prometheus and Grafana monitoring stack to track system performance metrics and visualize backend service errors",
+    skills: "Python, Flask, PyTest, React.js, JavaScript, Docker, AWS, Linux, Prometheus, Grafana, GitHub, CI/CD Pipelines, Bash, Scripting, MySQL, SQL, RDBMS, OpenAI",
   },
   {
     id: 1,
+    img: "https://media.licdn.com/dms/image/v2/C560BAQGQ9cuzhEi0kw/company-logo_200_200/company-logo_200_200/0/1644944765154/aurahomeinc_logo?e=1749081600&v=beta&t=DmsQut8QC_xvI6KAuSoqDBvdlG0VtzQ0m3EcQQph5cc",
+    role: "Software Engineer",
+    company: "Computing Aura LLC",
+    date: "May 2023 - April 2024",
+    desc: " •	Architected and implemented a Report Abuse feature using Python that transformed content moderation from manual to an automated workflow, enabling real-time reporting while protecting reporter privacy and ensuring proper context.	Designed and developed the Regularly Updated Stories feature with React.js that significantly increased user engagement and session time by 25%, enhancing content discovery and reducing drop-offs for serialized content.	Created a Total Tokens for Remaining Episodes display on story detail pages that connected readers with information about upcoming content, improving the visibility of active creators and enabling more informed reading decisions.	Resolved critical accessibility issues to ensure WCAG compliance, making the reading interface inclusive for users with disabilities through improved screen reader compatibility and keyboard navigation, significantly expanding the platform's user base.	Collaborated with cross-functional teams to optimize backend services, implementing monitoring and logging for feature usage that enabled data-driven decisions while ensuring smooth performance for thousands of users",
+    skills: "Python, Flask, JavaScript, React.js, AWS Lambda, DynamoDB, AWS, A/B Testing",
+  },
+  {
+    id: 2,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeErvte9JXsdyWxjryLy1o516emLS6UFDUhRZ4Hgf8CA&s",
     role: "Teaching Assistant",
     company: "University of Dayton",
@@ -236,21 +247,21 @@ export const experiences = [
     skills: "SQL, MySQL, Oracle, Database Management Systems",
   },
   {
-    id: 2,
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAMYaPt063CvF3zH9MaS1rbEoNoYOBAoygyw&usqp=CAU",
+    id: 3,
+    img: "https://media.licdn.com/dms/image/v2/D4E0BAQHDbmrSIZ2UdA/company-logo_200_200/company-logo_200_200/0/1723130689960/accenture_logo?e=1749081600&v=beta&t=GtPI_RhgdBdDNbrrmMFU63Qg1ZZOjbLsMLmkCvWQmYM",
     role: "Full Stack Engineer",
-    company: "Aekta Electricals",
-    date: "Sept 2018 - July 2022",
-    desc: "Developed and maintained scalable RESTful APIs using Java and Spring Boot, integrating external services to ensure seamless and efficient data communication between frontend and backend systems. Spearheaded the development of high-performance backend services using Python and Django, integrating PostgreSQL and Redis for optimized data retrieval, significantly improving system responsiveness by 15%. Developed and maintained robust, scalable, and highly efficient GraphQL APIs using Express.js on Node.js, enabling precise and optimized data fetching that significantly reduces payloads and enhances application performance. Engineered responsive single-page applications (SPAs) with React.js and Redux, delivering seamless user experiences across devices by effectively managing state and streamlining data flow. Implemented and optimized Jenkins for robust, streamlined continuous integration and delivery pipelines, drastically reducing deployment times and significantly enhancing code quality through advanced automated processes. Designed and optimized a comprehensive, adaptable AWS cloud infrastructure, utilizing EC2, CloudFront, Load Balancers, and Auto Scaling to ensure high availability, peak performance, and achieve 99.9% uptime. Enforced strict, advanced security measures by configuring AWS IAM roles, substantially augmenting system integrity and data protection with comprehensive access controls and robust security protocols.",
-    skills: "Python, Django, PostgreSQL, Redis, Node.js, Express.js, GraphQL, React.js, Redux, Jenkins, Selenium, Amazon Web Services, MongoDB",
+    company: "Accenture",
+    date: "Sept 2020 - July 2022",
+    desc: "•	Designed and developed an enterprise-level order processing service using Java and Spring Boot with microservices architecture that automated workflows and reduced manual data entry errors by 85%, while handling 2,000+ daily transactions.	Created PostgreSQL schemas with optimized indexing and partitioning, improving query performance by 70% for large datasets.	Implemented a multi-layered caching strategy with Redis that reduced database load by 70% for frequently accessed data and decreased average API response time from 300ms to 85ms.	Built RESTful APIs using TypeScript and Node.js, implementing Kafka for event-driven communication between microservices that improved system resilience and reduced inter-service dependencies.	Implemented concurrent request handling for booking services using a distributed locking mechanism with MongoDB to prevent data conflicts, successfully handling peak loads of 200+ simultaneous bookings with zero double-booking incidents.	Developed media streaming services implementing a content delivery architecture with CDN integration and adaptive bitrate streaming, reducing buffering incidents by 65% and supporting 1,000+ concurrent users.	Created responsive frontend interfaces with Next.js, React.js, and Redux, implementing code splitting and lazy loading that reduced initial load time by 45% and improved overall user engagement metrics.	Implemented comprehensive UI testing suite with Selenium and JUnit, creating automated test scripts for critical user journeys that identified 40+ edge cases and reduced post-release UI defects by 75%.	Established Jenkins CI/CD pipelines with automated testing, boosting code coverage to 92% and enabling daily deployments",
+    skills: "C#, ASP.NET Core, Java, Spring Boot, TypeScript, Next.js, Node.js, Express.js, React.js, Redux, PostgreSQL, MongoDB, Redis, Jenkins, Selenium, JUnit, AWS",
   },
   {
-    id: 3,
+    id: 4,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAMYaPt063CvF3zH9MaS1rbEoNoYOBAoygyw&usqp=CAU",
     role: "Software Engineer Intern",
     company: "Akash Technolabs",
-    date: "July 2019 - May 2020",
-    desc: "Played a key role in the end-to-end development of a cross-platform cab booking application, handling front-end, back-end, and middleware with Google Maps API to enhance real-time tracking features and user experience. Designed and optimized database schemas with MySQL, managing data efficiently for passengers, drivers, and administrative functions, which ensured seamless data flow and integrity across the application components. Worked closely with a cross-functional team in an Agile environment to meet tight deadlines and deliver high-quality features, contributing to the project's success and consistently exceeding expectations.",
+    date: "July 2019 - June 2020",
+    desc: "•	Built location-based dispatch algorithm for a cross-platform cab booking app that matched riders with nearby drivers, reducing average wait times by 25% and increasing driver efficiency using Google Maps Distance Matrix API.	Implemented geospatial indexing in the database to optimize location-based queries, enabling efficient radius searches that processed 500+ concurrent ride requests with sub-100ms response times while reducing server load by 35% during peak usage hours.	Participated in Agile development workflow with daily stand-ups and bi-weekly sprints, delivering 15+ features ahead of schedule while maintaining 95% test coverage through automated Selenium testing",
     skills: "Python, Flask, JavaScript, React.js, MySQL, Google Maps API, Selenium",
   }
 ];
@@ -378,5 +389,37 @@ export const projects = [
     ],
     category: "other",
     github: "https://github.com/saumya4751/data_visualization",
+  },
+  {
+    id: 6,
+    title: "Brag AI",
+    date: "Oct 2022 - Nov 2022",
+    description:
+      "Worked on web scraping to visualize the data from 2 websites, IMDB and a Weather website",
+    image:
+    `${opensource}`,
+    tags: [
+      "Docker",
+      "uv",
+      "Containerization",
+    ],
+    category: "open source",
+    github: "https://github.com/saumya4751/brag-ai",
+  },
+  {
+    id: 7,
+    title: "Botch Cog",
+    date: "Oct 2022 - Nov 2022",
+    description:
+      "Worked on web scraping to visualize the data from 2 websites, IMDB and a Weather website",
+    image:
+    `${opensource}`,
+    tags: [
+      "Python",
+      "Poetry",
+      "Discord",
+    ],
+    category: "open source",
+    github: "https://github.com/saumya4751/botch",
   },
 ];
